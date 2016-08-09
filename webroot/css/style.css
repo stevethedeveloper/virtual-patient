@@ -1,0 +1,329 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+/*
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+*/
+
+/**
+ * Remove default margin.
+ */
+
+/*
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#content {
+    max-width: 1200px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    padding: 10px;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*!
+ * Start Bootstrap - Landing Page Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Arial,sans-serif;
+    /*font-weight: 700;*/
+}
+
+.btn:focus {
+    outline: 0 !important;
+}
+
+.btn:active:focus {
+    outline: 0 !important;
+}
+
+.btn:hover {
+    outline: 0 !important;
+}
+
+/*.navbar .navbar-collapse {
+    width: 100%;
+    text-align: center;
+}*/
+
+
+@media (min-width: 797px) {
+    .navbar {
+        border-radius: 0;
+        background-color: #658d3d;
+        border: 0;
+        height: 44px;
+        border-bottom: 8px solid #b9c131;
+        color: #ffffff;
+        margin-bottom: 0;
+    }
+
+    .navbar a {
+        color: #ffffff !important;
+        font-size: 16px !important;
+        letter-spacing: .02em;
+    }
+
+    .navbar a:hover {
+        color: #b9c131 !important;
+    }
+
+    .navbar-nav > li > a {
+        padding-top: 12px;
+        padding-bottom: 15px;
+    }
+
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+
+    .nav .open > a {
+        background: transparent !important;
+        color: #b9c131 !important;
+    }
+
+    .dropdown-menu {
+        background: #658d3d;
+    }
+
+    .navbar {
+        z-index: 1000;
+    }
+
+    #page-content {
+        margin: 0 auto 20px auto;
+        width: 80%;
+    }
+
+    #title {
+        background: #b9c131;
+        margin: -20px auto 0 auto;
+        padding: 20px 0 20px 0;
+        color: white;
+        text-align: center;
+    }
+
+    #title-wave {
+        background: url(../img/wave.jpg);
+        background-repeat: horizontal;
+        height: 45px;
+        padding: 0;
+        margin: -10px 0 60px 0;
+    }
+.topnav {
+    font-size: 14px; 
+}
+
+#content {
+    min-width: 769px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#content .top-header {
+    margin: 17px 12% 17px 12%;
+}
+
+#content .top-header button {
+    margin-top: 25px;
+    float: right;
+    background-color: #658d3d;
+    border: 1px solid #658d3d;
+    border-radius: 6px;
+    letter-spacing: .02em;
+    color: #ffffff;
+}
+
+footer {
+    padding: 5px 0 10px 0;
+    background-color: #eff1d0;
+    text-align: right;
+    color: #658d3d;
+}
+
+footer a {
+    color: #658d3d;
+    text-decoration: underline;    
+}
+
+p.copyright {
+    margin: 6px 40px 0;
+    color: #658d3d;
+}
+
+#home-hero {
+    position: relative;
+    margin: 0;
+    background: url(../img/grassfield.png) no-repeat center top;
+    height: 514px;
+    margin-bottom: 10px;
+}
+
+#home-hero #home-wave {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 80px;
+    width: 100%;
+    background: url(../img/homepage_wave_call_out.png) no-repeat right bottom;
+    z-index: 99;
+}
+
+#home-hero #home-call-out {
+    position: absolute;
+    bottom: 0px;
+    right: 475px;
+    height: 80px;
+    width: 283px;
+    z-index: 100;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+#home-hero #home-call-out a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+#home-hero #home-woman {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    height: 80px;
+    z-index: 99;
+}
+
+#home-hero #home-woman img {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    max-width: 400px;
+    z-index: 99;
+}
+
+#home-hero #home-hero-text {
+    /*
+    right: 500px;
+    height: 80px;
+    width: 600px;
+    */
+    position: absolute;
+    top: 70px;
+    color: #658d3d;
+    font-size: 40px;
+    z-index: 101;
+    left: 75px;
+    right: 350px;
+    /*padding-top: 10px;
+    border: 1px solid red;*/
+}
+
+#home-hero .home-hero-links {
+    padding: 10px 0 10px 0;
+    margin-top: 40px;
+    font-size: 18px;
+    color: #ad688c;
+    background-color: rgba(255,255,255, 0.5);
+    text-align: center;
+    border-radius: 4px;
+}
+
+#home-hero .home-hero-links a {
+    color: #ad688c;
+    text-decoration: underline;
+}
+
+#home-logos {
+    color: #658d3d;
+    font-style: italic;
+    font-size: 12px;
+    margin-bottom: 40px;
+}
+
+#home-logos-njh {
+    border-right: 1px solid #658d3d;
+}
+}
+
+@media (max-width: 995px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left, .navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}

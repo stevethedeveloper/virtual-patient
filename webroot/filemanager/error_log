@@ -1,0 +1,5 @@
+[22-Apr-2016 02:17:37 Europe/Rome] PHP Warning:  scandir(../img/uploaded/): failed to open dir: No such file or directory in /home/wlbgcmpgn/public_html/cake/webroot/filemanager/dialog.php on line 479
+[22-Apr-2016 02:17:37 Europe/Rome] PHP Warning:  scandir(): (errno 2): No such file or directory in /home/wlbgcmpgn/public_html/cake/webroot/filemanager/dialog.php on line 479
+[22-Apr-2016 02:17:37 Europe/Rome] PHP Warning:  Invalid argument supplied for foreach() in /home/wlbgcmpgn/public_html/cake/webroot/filemanager/dialog.php on line 488
+[22-Apr-2016 02:17:37 Europe/Rome] PHP Notice:  Undefined variable: files_prevent_duplicate in /home/wlbgcmpgn/public_html/cake/webroot/filemanager/dialog.php on line 987
+[22-Apr-2016 02:17:37 Europe/Rome] PHP Warning:  Invalid argument supplied for foreach() in /home/wlbgcmpgn/public_html/cake/webroot/filemanager/dialog.php on line 987

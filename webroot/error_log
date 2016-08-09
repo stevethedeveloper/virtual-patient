@@ -1,0 +1,41 @@
+[13-Apr-2016 22:56:10 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/wlbgcmpgn/public_html/cake/src/Model/Table/UsersTable.php on line 15
+[13-Apr-2016 22:56:30 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/wlbgcmpgn/public_html/cake/src/Model/Table/UsersTable.php on line 13
+[13-Apr-2016 22:57:47 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/wlbgcmpgn/public_html/cake/src/Model/Table/UsersTable.php on line 13
+[13-Apr-2016 22:58:19 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/wlbgcmpgn/public_html/cake/src/Model/Table/UsersTable.php on line 15
+[14-Apr-2016 23:05:54 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/wlbgcmpgn/public_html/cake/src/Controller/AppController.php on line 88
+[14-Apr-2016 23:29:01 UTC] PHP Fatal error:  Can't use method return value in write context in /home/wlbgcmpgn/public_html/cake/src/Controller/Admin/UsersController.php on line 23
+[19-Apr-2016 21:40:28 UTC] PHP Fatal error:  Class 'App\Controller\Admin\ConnectionManager' not found in /home/wlbgcmpgn/public_html/cake/src/Controller/Admin/MenusController.php on line 123
+[19-Apr-2016 21:42:43 UTC] PHP Fatal error:  Class 'App\Controller\Admin\ConnectionManager' not found in /home/wlbgcmpgn/public_html/cake/src/Controller/Admin/MenusController.php on line 123
+[19-Apr-2016 21:42:47 UTC] PHP Fatal error:  Class 'App\Controller\Admin\ConnectionManager' not found in /home/wlbgcmpgn/public_html/cake/src/Controller/Admin/MenusController.php on line 123
+[19-Apr-2016 21:43:41 UTC] PHP Fatal error:  Class 'App\Controller\Admin\ConnectionManager' not found in /home/wlbgcmpgn/public_html/cake/src/Controller/Admin/MenusController.php on line 123
+[19-Apr-2016 21:46:15 UTC] PHP Fatal error:  Class 'App\Controller\Admin\ConnectionManager' not found in /home/wlbgcmpgn/public_html/cake/src/Controller/Admin/MenusController.php on line 123
+[19-Apr-2016 22:44:39 UTC] PHP Fatal error:  Call to undefined method App\Controller\Admin\MenusController::errors() in /home/wlbgcmpgn/public_html/cake/src/Controller/Admin/MenusController.php on line 65
+[19-Apr-2016 22:53:34 UTC] PHP Fatal error:  Call to a member function getDisplayOrder() on boolean in /home/wlbgcmpgn/public_html/cake/src/Controller/Admin/MenusController.php on line 61
+[19-Apr-2016 23:15:04 UTC] PHP Fatal error:  Call to a member function func() on null in /home/wlbgcmpgn/public_html/cake/src/Model/Table/MenusTable.php on line 101
+[19-Apr-2016 23:15:23 UTC] PHP Fatal error:  Call to a member function select() on null in /home/wlbgcmpgn/public_html/cake/src/Model/Table/MenusTable.php on line 101
+[19-Apr-2016 23:18:56 UTC] PHP Fatal error:  Call to a member function func() on null in /home/wlbgcmpgn/public_html/cake/src/Model/Table/MenusTable.php on line 101
+[19-Apr-2016 23:22:06 UTC] PHP Fatal error:  Call to undefined method Cake\Database\Statement\CallbackStatement::toArray() in /home/wlbgcmpgn/public_html/cake/src/Model/Table/MenusTable.php on line 103
+[20-Apr-2016 21:58:46 UTC] PHP Parse error:  syntax error, unexpected ''sort'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/wlbgcmpgn/public_html/cake/src/Model/Table/MenusTable.php on line 42
+[20-Apr-2016 23:45:05 UTC] PHP Fatal error:  Call to undefined method App\Controller\Admin\MenusController::deleteAll() in /home/wlbgcmpgn/public_html/cake/src/Controller/Admin/MenusController.php on line 131
+[22-Apr-2016 13:40:01 America/Indiana/Indianapolis] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /home/wlbgcmpgn/public_html/cake/config/bootstrap.php on line 228
+[22-Apr-2016 13:40:08 America/Indiana/Indianapolis] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /home/wlbgcmpgn/public_html/cake/config/bootstrap.php on line 228
+[22-Apr-2016 13:40:18 America/Indiana/Indianapolis] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/wlbgcmpgn/public_html/cake/config/bootstrap.php on line 228
+[22-Apr-2016 19:24:41 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/wlbgcmpgn/public_html/cake/src/Controller/Admin/ContentPagesController.php on line 83
+[22-Apr-2016 19:24:46 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/wlbgcmpgn/public_html/cake/src/Controller/Admin/ContentPagesController.php on line 83
+[22-Apr-2016 19:24:47 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/wlbgcmpgn/public_html/cake/src/Controller/Admin/ContentPagesController.php on line 83
+[22-Apr-2016 21:20:03 UTC] PHP Fatal error:  Call to undefined method App\Controller\ContentPagesController::find() in /home/wlbgcmpgn/public_html/cake/src/Controller/ContentPagesController.php on line 25
+[22-Apr-2016 21:33:33 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/wlbgcmpgn/public_html/cake/src/Controller/ContentPagesController.php on line 26
+[22-Apr-2016 21:34:03 UTC] PHP Fatal error:  Call to a member function where() on boolean in /home/wlbgcmpgn/public_html/cake/src/Controller/ContentPagesController.php on line 27
+[22-Apr-2016 21:43:45 UTC] PHP Fatal error:  Call to a member function select() on null in /home/wlbgcmpgn/public_html/cake/src/Controller/ContentPagesController.php on line 27
+[22-Apr-2016 21:57:10 UTC] PHP Parse error:  syntax error, unexpected '' => '' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/wlbgcmpgn/public_html/cake/src/Template/Admin/ContentPages/index.ctp on line 26
+[22-Apr-2016 22:26:34 UTC] PHP Parse error:  syntax error, unexpected ''options'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/wlbgcmpgn/public_html/cake/src/Template/Admin/Menus/edit.ctp on line 13
+[26-Apr-2016 17:56:28 UTC] PHP Parse error:  syntax error, unexpected '=', expecting ']' in /home/wlbgcmpgn/public_html/cake/src/View/AppView.php on line 41
+[26-Apr-2016 17:56:52 UTC] PHP Fatal error:  Call to undefined method App\View\AppView::initializeUI() in /home/wlbgcmpgn/public_html/cake/src/View/AppView.php on line 41
+[26-Apr-2016 23:11:48 UTC] PHP Fatal error:  Class 'App\Controller\Admin\ConnectionManager' not found in /home/wlbgcmpgn/public_html/cake/src/Controller/Admin/ContentPagesController.php on line 149
+[26-Apr-2016 23:12:07 UTC] PHP Fatal error:  Class 'App\Controller\Admin\ConnectionManager' not found in /home/wlbgcmpgn/public_html/cake/src/Controller/Admin/ContentPagesController.php on line 149
+[26-Apr-2016 23:19:45 UTC] PHP Fatal error:  Call to a member function isNew() on null in /home/wlbgcmpgn/public_html/cake/vendor/cakephp/cakephp/src/ORM/Marshaller.php on line 453
+[26-Apr-2016 23:37:09 UTC] PHP Parse error:  syntax error, unexpected ''action'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/wlbgcmpgn/public_html/cake/src/Controller/Admin/VideosController.php on line 85
+[29-Apr-2016 01:41:15 UTC] PHP Fatal error:  Call to a member function get() on boolean in /home/wlbgcmpgn/public_html/cake/src/Controller/AppController.php on line 82
+[29-Apr-2016 01:41:48 UTC] PHP Fatal error:  Call to a member function find() on boolean in /home/wlbgcmpgn/public_html/cake/src/Controller/AppController.php on line 82
+[29-Apr-2016 02:42:21 UTC] PHP Parse error:  syntax error, unexpected ''sort'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/wlbgcmpgn/public_html/cake/src/Model/Table/MenusTable.php on line 42
+[29-Apr-2016 03:04:00 UTC] PHP Fatal error:  Unsupported operand types in /home/wlbgcmpgn/public_html/cake/vendor/cakephp/cakephp/src/ORM/EagerLoader.php on line 323
