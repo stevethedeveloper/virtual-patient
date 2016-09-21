@@ -1,0 +1,326 @@
+/*
+    Colorbox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #fv_player_pro_boxOverlay, #fv_player_pro_boxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#fv_player_pro_boxWrapper {max-width:none;}
+#fv_player_pro_boxOverlay{position:fixed; width:100%; height:100%;}
+#fv_player_pro_boxMiddleLeft, #fv_player_pro_boxBottomLeft{clear:left;}
+#fv_player_pro_boxContent{position:relative;}
+#fv_player_pro_boxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+#fv_player_pro_boxTitle{margin:0;}
+#fv_player_pro_boxLoadingOverlay, #fv_player_pro_boxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#fv_player_pro_boxPrevious, #fv_player_pro_boxNext, #fv_player_pro_boxClose, #fv_player_pro_boxSlideshow{cursor:pointer;}
+.fv_player_pro_boxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
+.fv_player_pro_boxIframe{width:100%; height:100%; display:block; border:0;}
+#colorbox, #fv_player_pro_boxContent, #fv_player_pro_boxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of Colorbox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#fv_player_pro_boxOverlay{background:#000;}
+#colorbox{outline:0;}
+    #fv_player_pro_boxTopLeft{width:14px; height:14px; background:url(images/controls.png) no-repeat 0 0;}
+    #fv_player_pro_boxTopCenter{height:14px;}
+    #fv_player_pro_boxTopRight{width:14px; height:14px; background:url(images/controls.png) no-repeat -36px 0;}
+    #fv_player_pro_boxBottomLeft{width:14px; height:43px; background:url(images/controls.png) no-repeat 0 -32px;}
+    #fv_player_pro_boxBottomCenter{height:43px;}
+    #fv_player_pro_boxBottomRight{width:14px; height:43px; background:url(images/controls.png) no-repeat -36px -32px;}
+    #fv_player_pro_boxMiddleLeft{width:14px; background:url(images/controls.png) repeat-y -175px 0;}
+    #fv_player_pro_boxMiddleRight{width:14px; background:url(images/controls.png) repeat-y -211px 0;}
+    #fv_player_pro_boxContent{background:#fff; overflow:visible;}
+        .fv_player_pro_boxIframe{background:#fff;}
+        #fv_player_pro_boxError{padding:50px; border:1px solid #ccc;}
+        #fv_player_pro_boxLoadedContent{margin-bottom:5px;}
+        
+        #fv_player_pro_boxLoadingGraphic{background:url(images/loading.gif) no-repeat center center;}
+        #fv_player_pro_boxTitle{position:absolute; bottom:-25px; left:0; text-align:center; width:100%; font-weight:bold; color:#7C7C7C;}
+        #fv_player_pro_boxCurrent{position:absolute; bottom:-25px; left:58px; font-weight:bold; color:#7C7C7C;}
+
+        /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+        #fv_player_pro_boxPrevious, #fv_player_pro_boxNext, #fv_player_pro_boxSlideshow, #fv_player_pro_boxClose {border:0; padding:0; margin:0; overflow:visible;  position:absolute; bottom:-29px; background:url(images/controls.png) no-repeat 0px 0px; width:23px; height:23px; text-indent:-9999px;}
+        
+        /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+        #fv_player_pro_boxPrevious:active, #fv_player_pro_boxNext:active, #fv_player_pro_boxSlideshow:active, #fv_player_pro_boxClose:active {outline:0;}
+
+        #fv_player_pro_boxPrevious{left:0px; background-position: -51px -25px;}
+        #fv_player_pro_boxPrevious:hover{background-position:-51px 0px;}
+        #fv_player_pro_boxNext{left:27px; background-position:-75px -25px;}
+        #fv_player_pro_boxNext:hover{background-position:-75px 0px;}
+        #fv_player_pro_boxClose{right:0; background-position:-100px -25px;}
+        #fv_player_pro_boxClose:hover{background-position:-100px 0px;}
+
+        .fv_player_pro_boxSlideshow_on #fv_player_pro_boxSlideshow{background-position:-125px 0px; right:27px;}
+        .fv_player_pro_boxSlideshow_on #fv_player_pro_boxSlideshow:hover{background-position:-150px 0px;}
+        .fv_player_pro_boxSlideshow_off #fv_player_pro_boxSlideshow{background-position:-150px -25px; right:27px;}
+        .fv_player_pro_boxSlideshow_off #fv_player_pro_boxSlideshow:hover{background-position:-125px 0px;}
+        
+        
+        
+        
+/*! noUiSlider - 7.0.10 - 2014-12-27 14:50:47 */
+
+
+.noUi-target,.noUi-target *{-webkit-touch-callout:none;-webkit-user-select:none;-ms-touch-action:none;-ms-user-select:none;-moz-user-select:none;-moz-box-sizing:border-box;box-sizing:border-box}.noUi-target{position:relative;direction:ltr}.noUi-base{width:100%;height:100%;position:relative}.noUi-origin{position:absolute;right:0;top:0;left:0;bottom:0}.noUi-handle{position:relative;z-index:1}.noUi-stacking .noUi-handle{z-index:10}.noUi-state-tap .noUi-origin{-webkit-transition:left .3s,top .3s;transition:left .3s,top .3s}.noUi-state-drag *{cursor:inherit!important}.noUi-base{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}.noUi-horizontal{height:10px}.noUi-horizontal .noUi-handle{width:26px;height:19px;left:-15px;top:-4px;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;cursor:pointer;}.noUi-vertical{width:18px}.noUi-vertical .noUi-handle{width:28px;height:34px;left:-6px;top:-17px}.noUi-background{background:#666;}.noUi-connect{background:#c80000;-webkit-transition:background 450ms;transition:background 450ms}.flowplayer .noUi-target{max-width:100%;}.noUi-target.noUi-connect{box-shadow:inset 0 0 3px rgba(51,51,51,.45),0 3px 6px -5px #BBB}.noUi-dragable{cursor:w-resize}.noUi-vertical .noUi-dragable{cursor:n-resize}.noUi-handle{border:1px solid #D9D9D9;background:#FFF;cursor:default;}.noUi-active{box-shadow:inset 0 0 1px #FFF,inset 0 1px 7px #DDD,0 3px 6px -3px #BBB}.noUi-handle:after{content:"";display:block;position:absolute;height:14px;left:14px;top:-3px}.noUi-handle.noUi-handle-lower:after{content:"A";}.noUi-handle.noUi-handle-upper:after{content:"B";left:9px;}.noUi-handle:before{content:"";width:1px;height:5px;display:block;background:#fff;position:absolute;top:-7px;left:12px;}.noUi-handle:after{left:8px}.noUi-vertical .noUi-handle:after{width:14px;height:1px;left:6px;top:14px}.noUi-vertical .noUi-handle:after{top:17px}[disabled] .noUi-connect,[disabled].noUi-connect{background:#B8B8B8}[disabled] .noUi-handle{cursor:not-allowed}
+       
+        
+        
+        
+/* Media Queries */
+
+@media screen and (min-width: 300px) and (max-width: 560px) {
+	#fv_player_pro_boxTitle {
+		width: 56%;
+		left: 100px;
+		font-size: 10px;
+		line-height: 1.2;
+	}
+}
+
+
+/* Lightbox Styling */
+
+
+#fv_player_pro_boxMiddleLeft,
+#fv_player_pro_boxMiddleRight,
+#fv_player_pro_boxTopLeft,
+#fv_player_pro_boxTopCenter,
+#fv_player_pro_boxTopRight,
+#fv_player_pro_boxBottomLeft,
+#fv_player_pro_boxBottomRight,
+#fv_player_pro_boxBottomCenter {
+	background: #fff;	
+}
+
+#fv_player_pro_boxSlideshow, 
+#fv_player_pro_boxClose {
+	background-image: url("images/controls.png");
+	background-repeat: no-repeat;
+}
+
+#fv_player_pro_boxClose {
+	background-image: url("images/closelabel.gif");
+	background-position: center center;
+	width: 66px;
+}
+
+#fv_player_pro_boxClose:hover {
+	background-position: center center;
+}
+
+#fv_player_pro_boxMiddleLeft,
+#fv_player_pro_boxMiddleRight,
+#fv_player_pro_boxTopLeft,
+#fv_player_pro_boxTopRight,
+#fv_player_pro_boxBottomLeft,
+#fv_player_pro_boxBottomRight {
+	width: 10px;	
+}
+
+#fv_player_pro_boxTopCenter,
+#fv_player_pro_boxTopLeft,
+#fv_player_pro_boxTopRight {
+	height: 10px;	
+}
+
+#fv_player_pro_boxBottomLeft,
+#fv_player_pro_boxBottomRight,
+#fv_player_pro_boxBottomCenter {
+	height: 38px;	
+}
+
+#fv_player_pro_boxTitle,
+#fv_player_pro_boxCurrent {
+	font-weight: normal;	
+}
+
+#fv_player_pro_boxLoadedContent {
+	position: relative;
+	display: inline-block;
+	z-index: 99998;
+}
+
+#fv_player_pro_boxCurrent {
+	left: 0;
+}
+
+#fv_player_pro_boxPrevious,
+#fv_player_pro_boxNext {
+	background: none;
+	width: 15%;
+	height: auto;
+	top: 30px;
+  bottom: 80px;
+	display: block;
+	z-index: 99999;
+}
+
+#fv_player_pro_boxPrevious {
+	left: 0;
+	background: url("images/prevlabel.gif") no-repeat -999em center;
+}
+
+#fv_player_pro_boxNext {
+	right: -1px;
+	left: 85%;
+	background: url("images/nextlabel.gif") no-repeat 999em center;
+}
+
+#fv_player_pro_boxPrevious:hover {
+	background-position: -4px center;
+}
+
+#fv_player_pro_boxNext:hover {
+	background-position: right center;
+}
+
+
+/*  FV Player Pro specific  */
+#fv_player_pro_boxLoadedContent .flowplayer { margin: 0 auto; float: none }
+
+/* Quality selection */
+/*.flowplayer ul.fv-player-quality { display: none; position: absolute; bottom: 5%; right: 2%; z-index: 2; list-style-type: none; }
+.is-mouseover ul.fv-player-quality { display: block; }
+.is-splash ul.fv-player-quality { display: none; }
+.flowplayer ul.fv-player-quality li { list-style-type: none; float: left; margin-left: 5px; text-align: center; }
+.flowplayer ul.fv-player-quality li a { color: white; display:block;width:60px;height:24px;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s;/ *border:4px solid #fff;* /background:#ccc;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;background-size:auto 100px;background-position:center; text-decoration: none;  }
+.flowplayer ul.fv-player-quality li a.current { background:#52b9e4; }
+.flowplayer ul.fv-player-quality li a:visited { color: white; }*/
+
+.fv_fp_chapters a.current { font-weight: bold; }
+
+/*.flowplayer.is-youtube .fp-ui {
+  height: 70%;
+  margin-bottom: 30%;
+  background-position: center 80% !important;
+}
+.flowplayer.is-youtube .fp-controls {
+  bottom: -43%;
+}
+.is-mouseover.flowplayer.is-youtube .fp-controls {
+  bottom: -43%;
+}
+.flowplayer.is-youtube .fp-time em {
+  bottom: -41%;
+}
+.is-fullscreen.flowplayer.is-youtube .fp-controls {
+  bottom: -42%;
+}*/
+
+.flowplayer.is-cva .fp-time, .flowplayer.is-cva .fp-controls, .flowplayer.is-cva .speed-buttons, .flowplayer.is-cva .fp-fullscreen {
+  display: none;
+}
+.flowplayer .fvp-share-bar {
+  visibility: visible;
+}
+.flowplayer.is-cva .fvp-share-bar {
+  visibility: hidden;
+}
+
+.flowplayer .fv-cva-time {
+  bottom: 20px;
+  color: white;
+  float: right;
+  position: absolute;
+  right: 20px;
+  z-index: 20;
+  display: none;
+}
+.flowplayer.is-cva .fv-cva-time {
+  display: block;
+}
+#content .flowplayer a.fv-cva-skip, .flowplayer a.fv-cva-skip {
+  color: white;
+}
+#content .flowplayer a.fv-cva-skip:hover, .flowplayer a.fv-cva-skip:hover {
+  text-decoration: underline;
+}
+
+.flowplayer .fv-ab-loop {
+  bottom: -28px;
+	height: 28px;
+  display: none;
+  /*margin-right: 150px;*/
+  padding: 8px 160px 10px 72px;  
+  position: absolute;
+  width: 100%;
+  z-index: 2;  
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+	background-color: #333;
+}
+.flowplayer .fv-ab-loop.active {
+	display: block;
+	opacity: 1;
+}
+.flowplayer.is-mouseout .fv-ab-loop.active {
+	-webkit-transition: all 0.15s ease 0.3s;
+	-moz-transition: all 0.15s ease 0.3s;
+	transition: all 0.15s ease 0.3s;
+    height: 0;
+    bottom: 0;
+	opacity: 0;
+	margin: 0;
+}
+
+.flowplayer canvas {
+  bottom: 30px;
+  left: 10px;
+  outline: 4px solid #fff;
+  position: absolute;
+  z-index: 2147483647 !important;
+  display: none;
+}
+.flowplayer canvas.location-upper,
+.flowplayer.is-fullscreen canvas {
+  left: auto;
+  right: 10px;
+}
+.is-fullscreen .fp-logo {
+	bottom: 54px;
+}
+.is-fullscreen.has-abloop .fv-player-buttons-left,
+.is-fullscreen.has-abloop .fv-player-buttons-center,
+.is-fullscreen.has-abloop .fv-player-buttons-right,
+.logoleft .is-fullscreen.has-abloop .fp-logo,
+.logoright .is-fullscreen.has-abloop .fp-logo {
+	bottom: 50px;
+}
+/*.flowplayer.is-fullscreen .fv-ab-loop {
+  bottom: 0;
+}*/
+.is-fullscreen.is-mouseover.has-abloop .fp-controls {
+	bottom: 28px;	
+}
+.flowplayer.is-fullscreen .wpfp_custom_ad {
+	bottom: 6.5%;
+}
+.has-abloop.is-fullscreen .wpfp_custom_ad {
+	bottom: 10.5%;
+}
+.has-abloop.is-fullscreen .fv-ab-loop.active {
+	bottom: 0;
+  z-index: 20;
+}
+.has-abloop.is-fullscreen .fp-time em { 
+	bottom: 34px;
+}
+
+iframe#youtube.fp-engine {
+    height: 100%;
+    width: 100%;
+}
+
+
+p.fv_player_pro_rcp_remaining {
+    margin: 5px 0 15px;
+    background-color: #ffffe0;
+    border-color: #e6db55;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 0 0.6em;
+}
