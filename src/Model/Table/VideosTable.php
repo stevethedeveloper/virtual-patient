@@ -6,11 +6,13 @@ use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
+use Cake\ORM\TableRegistry;
 
 /**
  * Videos Model
  *
- * @property \Cake\ORM\Association\BelongsTo $ContentPages
+ * @property \Cake\ORM\Association\BelongsTo $AllCases
+ * @property \Cake\ORM\Association\HasMany $HistoryQuestions
  */
 class VideosTable extends Table
 {
@@ -26,13 +28,13 @@ class VideosTable extends Table
         parent::initialize($config);
 
         $this->table('videos');
-        $this->displayField('title');
+        $this->displayField('id');
         $this->primaryKey('id');
 
         $this->addBehavior('Timestamp');
 
-        $this->belongsTo('ContentPages', [
-            'foreignKey' => 'content_page_id',
+        $this->belongsTo('AllCases', [
+            'foreignKey' => 'all_cases_id',
             'joinType' => 'INNER'
         ]);
     }
@@ -46,27 +48,8 @@ class VideosTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->integer('id')
+            ->add('id', 'valid', ['rule' => 'numeric'])
             ->allowEmpty('id', 'create');
-
-        /*
-        $validator
-            ->requirePresence('video_url', 'create')
-            ->notEmpty('video_url');
-
-        $validator
-            ->requirePresence('title', 'create')
-            ->notEmpty('title');
-
-        $validator
-            ->requirePresence('description', 'create')
-            ->notEmpty('description');
-
-        $validator
-            ->integer('display_order')
-            ->requirePresence('display_order', 'create')
-            ->notEmpty('display_order');
-        */
 
         return $validator;
     }
@@ -80,13 +63,73 @@ class VideosTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['content_page_id'], 'ContentPages'));
+        $rules->add($rules->existsIn(['all_cases_id'], 'AllCases'));
         return $rules;
     }
 
-    public function getDisplayOrder($content_page_id) {
-        $query = $this->find();
-        $query->select(['max_display_order' => $query->func()->max('display_order')]);
-        return $query->all()->toArray()[0]->max_display_order + 1;
+    public function getVideosArray($data, $video_id) {
+        $streamer_path = $data->general_setting->streamer_path;
+        $ios_path = $data->general_setting->ios_path;
+        $folder = $data->general_setting->folder;
+
+        $videos = $this->find()
+            ->where(['Videos.id' => $video_id])
+            ->first();
+
+        $video_file_name = $videos->video_file_name;
+
+        $arr = array();
+        $arr['rtmp'] = 'rtmp://'.$streamer_path.$folder.'/'.$video_file_name;
+        $arr['http'] = 'http://'.$ios_path.$folder.'/'.$video_file_name;
+        
+        return $arr;
+
     }
+
+    public function getPlaceholderVideosArray($case_id) {
+
+        $this->CustomPages = TableRegistry::get('CustomPages');
+
+        $data = $this->CustomPages->get_page($case_id, 'intro');
+
+        $page = $data->custom_pages[0];
+
+        $streamer_path = $data->general_setting->streamer_path;
+        $ios_path = $data->general_setting->ios_path;
+        $folder = $data->general_setting->folder;
+
+        $videos = $this->find()
+            ->where(['Videos.id' => $page->video_id])
+            ->first();
+
+        $video_file_name = $videos->video_file_name;
+
+        $arr = array();
+        $arr['rtmp'] = 'rtmp://'.$streamer_path.$folder.'/'.$video_file_name;
+        $arr['http'] = 'http://'.$ios_path.$folder.'/'.$video_file_name;
+        
+        return $arr;
+
+    }
+
+    public function getVideoList($case_id) {
+        $data = $this->find()
+            ->select(['id', 'video_file_name', 'video_nice_name'])
+            ->formatResults(function($results) {
+                return $results->combine(
+                    'id',
+                    function($row) {
+                        return $row['video_file_name'] . ' - ' . $row['video_nice_name'];
+                    }
+                );
+            })
+            ->where(['all_cases_id' => $case_id])
+            ->all()
+            ->toArray();
+
+        $data = ['' => ''] + $data;
+
+        return $data;
+    }
+
 }

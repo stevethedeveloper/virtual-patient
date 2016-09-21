@@ -1,41 +1,618 @@
-[13-Apr-2016 22:56:10 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/wlbgcmpgn/public_html/cake/src/Model/Table/UsersTable.php on line 15
-[13-Apr-2016 22:56:30 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/wlbgcmpgn/public_html/cake/src/Model/Table/UsersTable.php on line 13
-[13-Apr-2016 22:57:47 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/wlbgcmpgn/public_html/cake/src/Model/Table/UsersTable.php on line 13
-[13-Apr-2016 22:58:19 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/wlbgcmpgn/public_html/cake/src/Model/Table/UsersTable.php on line 15
-[14-Apr-2016 23:05:54 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/wlbgcmpgn/public_html/cake/src/Controller/AppController.php on line 88
-[14-Apr-2016 23:29:01 UTC] PHP Fatal error:  Can't use method return value in write context in /home/wlbgcmpgn/public_html/cake/src/Controller/Admin/UsersController.php on line 23
-[19-Apr-2016 21:40:28 UTC] PHP Fatal error:  Class 'App\Controller\Admin\ConnectionManager' not found in /home/wlbgcmpgn/public_html/cake/src/Controller/Admin/MenusController.php on line 123
-[19-Apr-2016 21:42:43 UTC] PHP Fatal error:  Class 'App\Controller\Admin\ConnectionManager' not found in /home/wlbgcmpgn/public_html/cake/src/Controller/Admin/MenusController.php on line 123
-[19-Apr-2016 21:42:47 UTC] PHP Fatal error:  Class 'App\Controller\Admin\ConnectionManager' not found in /home/wlbgcmpgn/public_html/cake/src/Controller/Admin/MenusController.php on line 123
-[19-Apr-2016 21:43:41 UTC] PHP Fatal error:  Class 'App\Controller\Admin\ConnectionManager' not found in /home/wlbgcmpgn/public_html/cake/src/Controller/Admin/MenusController.php on line 123
-[19-Apr-2016 21:46:15 UTC] PHP Fatal error:  Class 'App\Controller\Admin\ConnectionManager' not found in /home/wlbgcmpgn/public_html/cake/src/Controller/Admin/MenusController.php on line 123
-[19-Apr-2016 22:44:39 UTC] PHP Fatal error:  Call to undefined method App\Controller\Admin\MenusController::errors() in /home/wlbgcmpgn/public_html/cake/src/Controller/Admin/MenusController.php on line 65
-[19-Apr-2016 22:53:34 UTC] PHP Fatal error:  Call to a member function getDisplayOrder() on boolean in /home/wlbgcmpgn/public_html/cake/src/Controller/Admin/MenusController.php on line 61
-[19-Apr-2016 23:15:04 UTC] PHP Fatal error:  Call to a member function func() on null in /home/wlbgcmpgn/public_html/cake/src/Model/Table/MenusTable.php on line 101
-[19-Apr-2016 23:15:23 UTC] PHP Fatal error:  Call to a member function select() on null in /home/wlbgcmpgn/public_html/cake/src/Model/Table/MenusTable.php on line 101
-[19-Apr-2016 23:18:56 UTC] PHP Fatal error:  Call to a member function func() on null in /home/wlbgcmpgn/public_html/cake/src/Model/Table/MenusTable.php on line 101
-[19-Apr-2016 23:22:06 UTC] PHP Fatal error:  Call to undefined method Cake\Database\Statement\CallbackStatement::toArray() in /home/wlbgcmpgn/public_html/cake/src/Model/Table/MenusTable.php on line 103
-[20-Apr-2016 21:58:46 UTC] PHP Parse error:  syntax error, unexpected ''sort'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/wlbgcmpgn/public_html/cake/src/Model/Table/MenusTable.php on line 42
-[20-Apr-2016 23:45:05 UTC] PHP Fatal error:  Call to undefined method App\Controller\Admin\MenusController::deleteAll() in /home/wlbgcmpgn/public_html/cake/src/Controller/Admin/MenusController.php on line 131
-[22-Apr-2016 13:40:01 America/Indiana/Indianapolis] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /home/wlbgcmpgn/public_html/cake/config/bootstrap.php on line 228
-[22-Apr-2016 13:40:08 America/Indiana/Indianapolis] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /home/wlbgcmpgn/public_html/cake/config/bootstrap.php on line 228
-[22-Apr-2016 13:40:18 America/Indiana/Indianapolis] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/wlbgcmpgn/public_html/cake/config/bootstrap.php on line 228
-[22-Apr-2016 19:24:41 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/wlbgcmpgn/public_html/cake/src/Controller/Admin/ContentPagesController.php on line 83
-[22-Apr-2016 19:24:46 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/wlbgcmpgn/public_html/cake/src/Controller/Admin/ContentPagesController.php on line 83
-[22-Apr-2016 19:24:47 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/wlbgcmpgn/public_html/cake/src/Controller/Admin/ContentPagesController.php on line 83
-[22-Apr-2016 21:20:03 UTC] PHP Fatal error:  Call to undefined method App\Controller\ContentPagesController::find() in /home/wlbgcmpgn/public_html/cake/src/Controller/ContentPagesController.php on line 25
-[22-Apr-2016 21:33:33 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/wlbgcmpgn/public_html/cake/src/Controller/ContentPagesController.php on line 26
-[22-Apr-2016 21:34:03 UTC] PHP Fatal error:  Call to a member function where() on boolean in /home/wlbgcmpgn/public_html/cake/src/Controller/ContentPagesController.php on line 27
-[22-Apr-2016 21:43:45 UTC] PHP Fatal error:  Call to a member function select() on null in /home/wlbgcmpgn/public_html/cake/src/Controller/ContentPagesController.php on line 27
-[22-Apr-2016 21:57:10 UTC] PHP Parse error:  syntax error, unexpected '' => '' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/wlbgcmpgn/public_html/cake/src/Template/Admin/ContentPages/index.ctp on line 26
-[22-Apr-2016 22:26:34 UTC] PHP Parse error:  syntax error, unexpected ''options'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/wlbgcmpgn/public_html/cake/src/Template/Admin/Menus/edit.ctp on line 13
-[26-Apr-2016 17:56:28 UTC] PHP Parse error:  syntax error, unexpected '=', expecting ']' in /home/wlbgcmpgn/public_html/cake/src/View/AppView.php on line 41
-[26-Apr-2016 17:56:52 UTC] PHP Fatal error:  Call to undefined method App\View\AppView::initializeUI() in /home/wlbgcmpgn/public_html/cake/src/View/AppView.php on line 41
-[26-Apr-2016 23:11:48 UTC] PHP Fatal error:  Class 'App\Controller\Admin\ConnectionManager' not found in /home/wlbgcmpgn/public_html/cake/src/Controller/Admin/ContentPagesController.php on line 149
-[26-Apr-2016 23:12:07 UTC] PHP Fatal error:  Class 'App\Controller\Admin\ConnectionManager' not found in /home/wlbgcmpgn/public_html/cake/src/Controller/Admin/ContentPagesController.php on line 149
-[26-Apr-2016 23:19:45 UTC] PHP Fatal error:  Call to a member function isNew() on null in /home/wlbgcmpgn/public_html/cake/vendor/cakephp/cakephp/src/ORM/Marshaller.php on line 453
-[26-Apr-2016 23:37:09 UTC] PHP Parse error:  syntax error, unexpected ''action'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/wlbgcmpgn/public_html/cake/src/Controller/Admin/VideosController.php on line 85
-[29-Apr-2016 01:41:15 UTC] PHP Fatal error:  Call to a member function get() on boolean in /home/wlbgcmpgn/public_html/cake/src/Controller/AppController.php on line 82
-[29-Apr-2016 01:41:48 UTC] PHP Fatal error:  Call to a member function find() on boolean in /home/wlbgcmpgn/public_html/cake/src/Controller/AppController.php on line 82
-[29-Apr-2016 02:42:21 UTC] PHP Parse error:  syntax error, unexpected ''sort'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/wlbgcmpgn/public_html/cake/src/Model/Table/MenusTable.php on line 42
-[29-Apr-2016 03:04:00 UTC] PHP Fatal error:  Unsupported operand types in /home/wlbgcmpgn/public_html/cake/vendor/cakephp/cakephp/src/ORM/EagerLoader.php on line 323
+[01-Dec-2015 09:18:19 UTC] PHP Fatal error:  Call to a member function read() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/View/AppView.php on line 41
+[01-Dec-2015 09:18:20 UTC] PHP Fatal error:  Call to a member function read() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/View/AppView.php on line 41
+[01-Dec-2015 22:35:03 UTC] PHP Fatal error:  Call to undefined function swalton|1449125864|NqleAz83z7uApn2rPXaWlnBAEAV7rnu8U9nZJOzMXLa|8684eb93994174f7c58d34e150b929e7f6a7ac37efe7090b417ec4223d113abc() in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/AppController.php on line 57
+[01-Dec-2015 22:41:52 UTC] PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/AppController.php on line 58
+[01-Dec-2015 23:16:53 UTC] PHP Parse error:  syntax error, unexpected ''logouRedirect'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/AppController.php on line 49
+[01-Dec-2015 23:48:12 UTC] PHP Fatal error:  Cannot break/continue 1 level in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/AppController.php on line 87
+[01-Dec-2015 23:48:28 UTC] PHP Fatal error:  Cannot break/continue 1 level in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/AppController.php on line 87
+[01-Dec-2015 23:49:10 UTC] PHP Fatal error:  Cannot break/continue 1 level in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/AppController.php on line 86
+[02-Dec-2015 00:37:01 UTC] PHP Fatal error:  Call to undefined function App\Controller\unserualize() in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/AppController.php on line 167
+[02-Dec-2015 01:34:50 UTC] PHP Fatal error:  Class 'App\Controller\AppController' not found in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/AllCasesController.php on line 12
+[02-Dec-2015 02:27:04 UTC] PHP Fatal error:  Class 'App\Controller\AppController' not found in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/PagesController.php on line 29
+[03-Dec-2015 01:37:56 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/AppController.php on line 198
+[03-Dec-2015 01:38:12 UTC] PHP Fatal error:  Call to undefined function App\Controller\write() in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/AppController.php on line 213
+[03-Dec-2015 01:39:00 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/AllCasesController.php on line 18
+[03-Dec-2015 19:37:50 UTC] PHP Fatal error:  Call to undefined function App\Controller\testfunction() in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/AppController.php on line 55
+[03-Dec-2015 19:42:38 UTC] PHP Fatal error:  Call to undefined method Cake\Controller\Component\AuthComponent::getUser() in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/AppController.php on line 162
+[03-Dec-2015 20:50:48 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/AppController.php on line 55
+[03-Dec-2015 23:58:02 UTC] PHP Fatal error:  Class 'App\Controller\TableRegistry' not found in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 17
+[04-Dec-2015 00:02:32 UTC] PHP Fatal error:  Call to a member function find() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 19
+[04-Dec-2015 00:10:53 UTC] PHP Fatal error:  Call to a member function find() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 17
+[04-Dec-2015 00:12:04 UTC] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting ',' or ';' in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 12
+[04-Dec-2015 00:12:15 UTC] PHP Fatal error:  Call to a member function find() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 18
+[04-Dec-2015 00:12:25 UTC] PHP Parse error:  syntax error, unexpected '$AllCases' (T_VARIABLE), expecting ',' or ';' in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 5
+[04-Dec-2015 21:21:14 UTC] PHP Parse error:  syntax error, unexpected '<', expecting ']' in /home/wipedis2/public_html/dev/virtual_patient/src/Template/CustomPages/intro.ctp on line 39
+[04-Dec-2015 22:22:39 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/wipedis2/public_html/dev/virtual_patient/src/Template/CustomPages/intro.ctp on line 37
+[04-Dec-2015 23:20:34 UTC] PHP Parse error:  syntax error, unexpected '' => __('' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/wipedis2/public_html/dev/virtual_patient/src/Template/CustomPages/intro.ctp on line 50
+[04-Dec-2015 23:32:47 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:32:48 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:32:49 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:32:50 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:32:51 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:32:52 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:32:52 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:32:53 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:32:54 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:32:55 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:32:56 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:32:57 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:32:57 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:32:58 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:32:59 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:00 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:01 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:01 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:02 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:03 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:04 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:05 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:05 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:06 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:07 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:08 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:09 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:09 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:10 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:11 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:12 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:13 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:13 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:14 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:15 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:16 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:16 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:17 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:18 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:19 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:19 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:20 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:21 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:22 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:23 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:23 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:24 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:25 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:26 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:26 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:27 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:28 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:29 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:30 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:30 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:31 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:32 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:33 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:34 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:34 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:35 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:36 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:37 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:38 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:38 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:39 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:40 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:41 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:41 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:42 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:43 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:44 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:44 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:45 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:46 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:46 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:47 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:48 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:49 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:50 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:51 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:51 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:53 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:54 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:54 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:55 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:56 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:57 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:58 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:59 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:33:59 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:01 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:01 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:02 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:04 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:04 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:06 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:07 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:08 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:08 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:09 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:10 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:11 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:12 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:13 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:15 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:15 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:17 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:18 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:20 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:22 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:22 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:23 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:24 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:28 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:30 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:30 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:31 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:32 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:33 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:34 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:35 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:36 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:37 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:38 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:40 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:41 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:43 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:44 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:45 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:46 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:46 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:47 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:48 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:49 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:50 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:51 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:51 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:52 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:53 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:54 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:55 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:55 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:56 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:57 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:58 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:34:59 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:00 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:01 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:02 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:03 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:04 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:04 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:05 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:06 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:07 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:07 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:08 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:09 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:10 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:10 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:11 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:12 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:13 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:13 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:14 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:15 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:16 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:16 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:17 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:18 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:19 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:20 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:20 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:21 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:22 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:23 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:24 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:25 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:25 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:26 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:27 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:27 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:28 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:29 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:30 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:30 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:31 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:32 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:33 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:34 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:34 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:35 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:36 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:37 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:37 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:38 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:39 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:39 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:40 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:41 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:42 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:42 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:43 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:44 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:44 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:45 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:46 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:47 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:48 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:49 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:50 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:51 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:52 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:53 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:53 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:54 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:55 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:56 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:57 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:57 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:58 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:35:59 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:00 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:01 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:01 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:02 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:03 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:04 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:05 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:06 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:07 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:07 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:08 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:09 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:09 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:10 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:11 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:12 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:12 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:13 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:14 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:15 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:15 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:16 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:17 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:17 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:18 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:19 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:20 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:20 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:21 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:22 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:23 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:24 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:24 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:25 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:26 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:27 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:27 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:28 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:29 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:30 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:30 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:31 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:32 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:33 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:33 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:34 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:35 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:36 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:36 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:37 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:38 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:39 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:39 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:40 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:41 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:42 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:42 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:43 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:44 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:45 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:46 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:46 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:47 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:48 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:49 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:49 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:50 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:51 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:52 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:52 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:53 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:54 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:55 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:56 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:57 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:57 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:58 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:36:59 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:37:00 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:37:01 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:37:01 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:37:02 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:37:03 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:37:04 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:37:04 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:37:05 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:37:06 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:37:07 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:37:08 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:37:09 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:37:09 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:37:10 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:37:11 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:37:12 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:37:12 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:37:13 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:37:14 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:37:14 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:37:15 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:37:16 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:37:17 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:37:18 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[04-Dec-2015 23:37:19 UTC] PHP Fatal error:  Using $this when not in object context in /home/wipedis2/public_html/dev/virtual_patient/config/routes.php on line 57
+[07-Dec-2015 21:27:17 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 24
+[07-Dec-2015 21:27:17 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 24
+[07-Dec-2015 21:27:17 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 24
+[07-Dec-2015 21:28:35 UTC] PHP Fatal error:  Call to a member function find() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/HistoryQuestionsController.php on line 23
+[07-Dec-2015 21:30:12 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/HistoryQuestionsController.php on line 30
+[07-Dec-2015 21:31:51 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/HistoryQuestionsController.php on line 30
+[07-Dec-2015 21:33:43 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/HistoryQuestionsController.php on line 31
+[07-Dec-2015 21:34:41 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/HistoryQuestionsController.php on line 31
+[07-Dec-2015 21:40:13 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/HistoryQuestionsController.php on line 31
+[07-Dec-2015 21:41:28 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/HistoryQuestionsController.php on line 31
+[07-Dec-2015 21:42:59 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/HistoryQuestionsController.php on line 31
+[07-Dec-2015 21:43:02 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/HistoryQuestionsController.php on line 31
+[07-Dec-2015 21:45:53 UTC] PHP Fatal error:  Call to a member function find() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/HistoryQuestionsController.php on line 24
+[07-Dec-2015 21:47:42 UTC] PHP Fatal error:  Call to a member function find() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 18
+[07-Dec-2015 21:47:45 UTC] PHP Fatal error:  Call to a member function find() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 18
+[07-Dec-2015 21:48:03 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 51
+[07-Dec-2015 21:48:18 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 51
+[07-Dec-2015 21:49:45 UTC] PHP Fatal error:  Call to undefined method App\Model\Entity\AllCase::all() in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 26
+[07-Dec-2015 21:52:12 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 24
+[07-Dec-2015 21:52:12 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 24
+[07-Dec-2015 21:52:12 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 24
+[07-Dec-2015 21:52:21 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 24
+[07-Dec-2015 21:52:21 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 24
+[07-Dec-2015 21:52:21 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 24
+[07-Dec-2015 21:57:39 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 24
+[07-Dec-2015 21:59:45 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 24
+[07-Dec-2015 21:59:45 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 24
+[07-Dec-2015 21:59:45 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 24
+[07-Dec-2015 22:12:25 UTC] PHP Fatal error:  Call to undefined function App\Model\Table\pe() in /home/wipedis2/public_html/dev/virtual_patient/src/Model/Table/CustomPagesTable.php on line 90
+[07-Dec-2015 22:16:00 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 43
+[07-Dec-2015 22:16:05 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 43
+[07-Dec-2015 22:16:27 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 43
+[07-Dec-2015 22:17:04 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 43
+[07-Dec-2015 22:17:14 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 43
+[07-Dec-2015 22:17:23 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 43
+[07-Dec-2015 22:19:20 UTC] PHP Fatal error:  Call to undefined method App\Model\Entity\CustomPage::where() in /home/wipedis2/public_html/dev/virtual_patient/src/Model/Table/CustomPagesTable.php on line 100
+[07-Dec-2015 22:20:51 UTC] PHP Fatal error:  Call to undefined method App\Model\Entity\CustomPage::all() in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/ORM/Association/ExternalAssociationTrait.php on line 112
+[07-Dec-2015 22:24:37 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/wipedis2/public_html/dev/virtual_patient/src/Model/Table/CustomPagesTable.php on line 96
+[07-Dec-2015 22:25:10 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 43
+[07-Dec-2015 22:27:17 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 43
+[07-Dec-2015 22:30:23 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 43
+[07-Dec-2015 22:31:01 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 43
+[07-Dec-2015 22:32:40 UTC] PHP Fatal error:  Call to undefined method App\Model\Entity\CustomPage::where() in /home/wipedis2/public_html/dev/virtual_patient/src/Model/Table/CustomPagesTable.php on line 99
+[07-Dec-2015 22:34:49 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 43
+[07-Dec-2015 22:39:36 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 43
+[07-Dec-2015 22:43:35 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 43
+[07-Dec-2015 22:45:26 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 43
+[07-Dec-2015 22:45:58 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 43
+[07-Dec-2015 22:47:12 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 43
+[07-Dec-2015 22:47:29 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 43
+[07-Dec-2015 22:47:43 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 43
+[07-Dec-2015 22:48:41 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 43
+[07-Dec-2015 22:49:05 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 43
+[07-Dec-2015 22:49:18 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 43
+[07-Dec-2015 22:49:33 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Model/Table/CustomPagesTable.php on line 103
+[07-Dec-2015 22:49:33 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Model/Table/CustomPagesTable.php on line 103
+[07-Dec-2015 22:49:33 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Model/Table/CustomPagesTable.php on line 103
+[07-Dec-2015 22:55:03 UTC] PHP Fatal error:  Call to undefined method App\Model\Entity\CustomPage::all() in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/ORM/Association/ExternalAssociationTrait.php on line 112
+[07-Dec-2015 22:59:57 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 41
+[07-Dec-2015 22:59:59 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 41
+[07-Dec-2015 23:00:10 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 43
+[07-Dec-2015 23:01:32 UTC] PHP Fatal error:  Call to a member function all() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 43
+[07-Dec-2015 23:01:58 UTC] PHP Fatal error:  Call to undefined method App\Model\Entity\AllCase::all() in /home/wipedis2/public_html/dev/virtual_patient/src/Model/Table/CustomPagesTable.php on line 103
+[07-Dec-2015 23:02:27 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 43
+[07-Dec-2015 23:03:38 UTC] PHP Fatal error:  Cannot use object of type Cake\ORM\ResultSet as array in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 24
+[07-Dec-2015 23:03:58 UTC] PHP Fatal error:  Cannot use object of type Cake\ORM\ResultSet as array in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 24
+[07-Dec-2015 23:04:28 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 43
+[07-Dec-2015 23:05:00 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 43
+[07-Dec-2015 23:06:05 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 43
+[07-Dec-2015 23:07:55 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 43
+[07-Dec-2015 23:12:22 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 43
+[08-Dec-2015 00:15:33 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 44
+[08-Dec-2015 00:15:35 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 44
+[08-Dec-2015 00:22:21 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 44
+[08-Dec-2015 00:23:05 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 44
+[08-Dec-2015 00:23:51 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/wipedis2/public_html/dev/virtual_patient/src/Model/Table/CustomPagesTable.php on line 110
+[08-Dec-2015 00:25:31 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 44
+[08-Dec-2015 00:25:46 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 44
+[08-Dec-2015 00:26:07 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 44
+[08-Dec-2015 00:27:34 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 42
+[08-Dec-2015 00:31:24 UTC] PHP Fatal error:  Call to a member function first() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 23
+[08-Dec-2015 00:31:34 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 23
+[08-Dec-2015 00:34:47 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 46
+[08-Dec-2015 00:34:47 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 46
+[08-Dec-2015 00:34:47 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 46
+[08-Dec-2015 00:36:22 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 44
+[08-Dec-2015 00:36:22 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 44
+[08-Dec-2015 00:36:22 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 44
+[08-Dec-2015 23:12:02 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/wipedis2/public_html/dev/virtual_patient/src/Template/Element/flowplayer.ctp on line 8
+[08-Dec-2015 23:12:43 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/wipedis2/public_html/dev/virtual_patient/src/Template/Element/flowplayer.ctp on line 8
+[08-Dec-2015 23:13:15 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/wipedis2/public_html/dev/virtual_patient/src/Template/Element/flowplayer.ctp on line 8
+[09-Dec-2015 18:44:43 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/wipedis2/public_html/dev/virtual_patient/src/Model/Table/HistoryQuestionsTable.php on line 90
+[09-Dec-2015 18:47:29 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/wipedis2/public_html/dev/virtual_patient/src/Model/Table/HistoryQuestionsTable.php on line 96
+[09-Dec-2015 18:47:48 UTC] PHP Fatal error:  Call to a member function all() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Model/Table/HistoryQuestionsTable.php on line 96
+[09-Dec-2015 18:54:09 UTC] PHP Fatal error:  Call to a member function all() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Model/Table/HistoryQuestionsTable.php on line 95
+[09-Dec-2015 18:54:19 UTC] PHP Fatal error:  Call to a member function first() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Model/Table/HistoryQuestionsTable.php on line 95
+[09-Dec-2015 18:54:32 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/wipedis2/public_html/dev/virtual_patient/src/Model/Table/HistoryQuestionsTable.php on line 95
+[09-Dec-2015 19:17:01 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/wipedis2/public_html/dev/virtual_patient/src/Model/Table/HistoryQuestionsTable.php on line 96
+[09-Dec-2015 19:21:06 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/wipedis2/public_html/dev/virtual_patient/src/Model/Table/HistoryQuestionsTable.php on line 97
+[09-Dec-2015 19:49:57 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/wipedis2/public_html/dev/virtual_patient/src/Model/Table/HistoryQuestionsTable.php on line 89
+[09-Dec-2015 22:24:57 UTC] PHP Fatal error:  Call to a member function find() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/HistoryQuestionsController.php on line 60
+[09-Dec-2015 22:25:32 UTC] PHP Fatal error:  Call to a member function find() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/HistoryQuestionsController.php on line 63
+[09-Dec-2015 22:41:38 UTC] PHP Fatal error:  Call to a member function find() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/HistoryQuestionsController.php on line 66
+[09-Dec-2015 22:48:52 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/HistoryQuestionsController.php on line 66
+[09-Dec-2015 22:50:25 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/HistoryQuestionsController.php on line 66
+[09-Dec-2015 23:56:58 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/wipedis2/public_html/dev/virtual_patient/src/Template/Layout/default.ctp on line 150
+[10-Dec-2015 00:26:05 UTC] PHP Fatal error:  Call to a member function find() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/HistoryQuestionsController.php on line 47
+[10-Dec-2015 06:05:12 UTC] PHP Fatal error:  Call to a member function find() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/AppController.php on line 186
+[10-Dec-2015 06:11:25 UTC] PHP Fatal error:  Class 'App\Controller\TableRegistry' not found in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/AppController.php on line 192
+[10-Dec-2015 06:12:07 UTC] PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/AppController.php on line 192
+[10-Dec-2015 19:03:26 UTC] PHP Parse error:  syntax error, unexpected '$event' (T_VARIABLE) in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/AppController.php on line 188
+[10-Dec-2015 19:45:16 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/wipedis2/public_html/dev/virtual_patient/src/Template/HistoryQuestions/index.ctp on line 50
+[10-Dec-2015 21:02:31 UTC] PHP Fatal error:  Cannot use [] for reading in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/HistoryQuestionsController.php on line 64
+[11-Dec-2015 17:27:27 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/wipedis2/public_html/dev/virtual_patient/src/Template/Element/flowplayer.ctp on line 80
+[11-Dec-2015 17:28:50 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/wipedis2/public_html/dev/virtual_patient/src/Template/Element/flowplayer.ctp on line 79
+[14-Dec-2015 20:28:56 UTC] PHP Fatal error:  Call to a member function getVideosArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/CustomPagesController.php on line 26
+[14-Dec-2015 22:07:34 UTC] PHP Fatal error:  Class 'App\Model\Table\App' not found in /home/wipedis2/public_html/dev/virtual_patient/src/Model/Table/VideosTable.php on line 107
+[14-Dec-2015 22:08:58 UTC] PHP Parse error:  syntax error, unexpected '$data' (T_VARIABLE) in /home/wipedis2/public_html/dev/virtual_patient/src/Model/Table/VideosTable.php on line 110
+[14-Dec-2015 22:09:08 UTC] PHP Fatal error:  Class 'App\Model\Table\TableRegistry' not found in /home/wipedis2/public_html/dev/virtual_patient/src/Model/Table/VideosTable.php on line 107
+[14-Dec-2015 22:09:33 UTC] PHP Fatal error:  Class 'App\Model\Table\TableRegistry' not found in /home/wipedis2/public_html/dev/virtual_patient/src/Model/Table/VideosTable.php on line 108
+[15-Dec-2015 22:59:09 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/DiagnosticsController.php on line 100
+[15-Dec-2015 23:00:01 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/DiagnosticsController.php on line 100
+[15-Dec-2015 23:00:39 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/DiagnosticsController.php on line 100
+[15-Dec-2015 23:00:53 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/DiagnosticsController.php on line 100
+[15-Dec-2015 23:00:57 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/DiagnosticsController.php on line 100
+[15-Dec-2015 23:01:54 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/DiagnosticsController.php on line 100
+[15-Dec-2015 23:05:42 UTC] PHP Fatal error:  Class 'App\Controller\ConnectionManager' not found in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/DiagnosticsController.php on line 121
+[15-Dec-2015 23:06:26 UTC] PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/DiagnosticsController.php on line 121
+[15-Dec-2015 23:37:06 UTC] PHP Parse error:  syntax error, unexpected '?>' in /home/wipedis2/public_html/dev/virtual_patient/src/Template/Diagnostics/differential.ctp on line 35
+[16-Dec-2015 00:16:44 UTC] PHP Fatal error:  Call to a member function newEntity() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/DiagnosticsController.php on line 123
+[17-Dec-2015 00:03:31 UTC] PHP Fatal error:  Call to undefined method App\Controller\OrderLabsController::get_labs() in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/OrderLabsController.php on line 37
+[17-Dec-2015 22:09:45 UTC] PHP Parse error:  syntax error, unexpected '[', expecting '(' in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/OrderLabsController.php on line 39
+[17-Dec-2015 22:28:07 UTC] PHP Parse error:  syntax error, unexpected 'video_file_name' (T_STRING), expecting ',' or ';' in /home/wipedis2/public_html/dev/virtual_patient/src/Template/OrderLabs/index.ctp on line 115
+[18-Dec-2015 00:16:55 UTC] PHP Parse error:  syntax error, unexpected '[', expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /home/wipedis2/public_html/dev/virtual_patient/src/Template/OrderLabs/index.ctp on line 219
+[18-Dec-2015 23:03:21 UTC] PHP Fatal error:  Call to a member function get_labs() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/ManagementCounselingsController.php on line 36
+[19-Dec-2015 00:55:01 UTC] PHP Fatal error:  Class 'App\Controller\ConnectionManager' not found in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/ManagementCounselingsController.php on line 101
+[19-Dec-2015 00:55:08 UTC] PHP Fatal error:  Class 'App\Controller\ConnectionManager' not found in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/ManagementCounselingsController.php on line 101
+[21-Dec-2015 19:36:02 UTC] PHP Fatal error:  Allowed memory size of 100663296 bytes exhausted (tried to allocate 89391104 bytes) in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/Core/functions.php on line 142
+[21-Dec-2015 21:13:02 UTC] PHP Fatal error:  Call to a member function get_questions() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/BillingsController.php on line 32
+[21-Dec-2015 21:13:39 UTC] PHP Fatal error:  Call to a member function get_questions() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/BillingsController.php on line 32
+[23-Dec-2015 19:59:38 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/wipedis2/public_html/dev/virtual_patient/src/Model/Table/UserAnswersTable.php on line 110
+[23-Dec-2015 22:56:51 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/wipedis2/public_html/dev/virtual_patient/src/Model/Table/UserAnswersTable.php on line 121
+[23-Dec-2015 22:57:11 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/wipedis2/public_html/dev/virtual_patient/src/Model/Table/UserAnswersTable.php on line 121
+[23-Dec-2015 22:57:40 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/wipedis2/public_html/dev/virtual_patient/src/Model/Table/UserAnswersTable.php on line 121
+[12-Jan-2016 23:52:46 UTC] PHP Fatal error:  Class 'App\Controller\Admin\NotFoundException' not found in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/GeneralSettingsController.php on line 24
+[19-Jan-2016 22:03:13 UTC] PHP Fatal error:  Call to a member function isNew() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/ORM/Marshaller.php on line 448
+[19-Jan-2016 22:08:34 UTC] PHP Fatal error:  Call to a member function isNew() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/ORM/Marshaller.php on line 448
+[19-Jan-2016 22:31:22 UTC] PHP Fatal error:  Call to a member function isNew() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/ORM/Marshaller.php on line 448
+[19-Jan-2016 22:32:22 UTC] PHP Fatal error:  Call to a member function isNew() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/ORM/Marshaller.php on line 448
+[19-Jan-2016 22:33:31 UTC] PHP Fatal error:  Call to a member function isNew() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/ORM/Marshaller.php on line 448
+[19-Jan-2016 22:34:43 UTC] PHP Fatal error:  Call to a member function isNew() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/ORM/Marshaller.php on line 448
+[19-Jan-2016 22:35:02 UTC] PHP Fatal error:  Call to a member function isNew() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/ORM/Marshaller.php on line 448
+[21-Jan-2016 21:05:57 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/HistoryQuestionsController.php on line 27
+[21-Jan-2016 21:23:00 UTC] PHP Parse error:  syntax error, unexpected ''limit'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/HistoryQuestionsController.php on line 24
+[21-Jan-2016 21:31:24 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/wipedis2/public_html/dev/virtual_patient/src/Template/Admin/HistoryQuestions/index.ctp on line 7
+[21-Jan-2016 22:26:27 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/wipedis2/public_html/dev/virtual_patient/src/Model/Table/HistoryQuestionsGroupsTable.php on line 75
+[22-Jan-2016 19:18:31 UTC] PHP Fatal error:  Call to a member function isNew() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/ORM/Marshaller.php on line 448
+[22-Jan-2016 19:20:10 UTC] PHP Fatal error:  Call to a member function errors() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/ORM/Table.php on line 1366
+[22-Jan-2016 19:20:37 UTC] PHP Fatal error:  Call to a member function isNew() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/ORM/Marshaller.php on line 448
+[22-Jan-2016 19:23:45 UTC] PHP Fatal error:  Call to a member function isNew() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/ORM/Marshaller.php on line 448
+[22-Jan-2016 19:30:23 UTC] PHP Fatal error:  Call to a member function errors() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/ORM/Table.php on line 1366
+[22-Jan-2016 19:30:28 UTC] PHP Fatal error:  Call to a member function errors() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/ORM/Table.php on line 1366
+[22-Jan-2016 19:30:37 UTC] PHP Fatal error:  Call to a member function errors() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/ORM/Table.php on line 1366
+[22-Jan-2016 19:33:43 UTC] PHP Fatal error:  Call to a member function errors() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/ORM/Table.php on line 1366
+[22-Jan-2016 19:33:50 UTC] PHP Fatal error:  Call to a member function errors() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/ORM/Table.php on line 1366
+[22-Jan-2016 19:36:38 UTC] PHP Fatal error:  Call to a member function errors() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/ORM/Table.php on line 1366
+[22-Jan-2016 19:37:07 UTC] PHP Fatal error:  Call to a member function isNew() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/ORM/Marshaller.php on line 448
+[22-Jan-2016 19:37:25 UTC] PHP Fatal error:  Call to a member function isNew() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/ORM/Marshaller.php on line 448
+[22-Jan-2016 19:37:53 UTC] PHP Fatal error:  Call to a member function isNew() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/ORM/Marshaller.php on line 448
+[22-Jan-2016 19:43:06 UTC] PHP Fatal error:  Call to a member function isNew() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/ORM/Marshaller.php on line 448
+[22-Jan-2016 19:43:36 UTC] PHP Fatal error:  Call to a member function isNew() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/ORM/Marshaller.php on line 448
+[22-Jan-2016 21:01:48 UTC] PHP Fatal error:  Call to a member function isNew() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/ORM/Marshaller.php on line 448
+[22-Jan-2016 21:09:35 UTC] PHP Fatal error:  Call to a member function isNew() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/ORM/Marshaller.php on line 448
+[22-Jan-2016 21:14:10 UTC] PHP Fatal error:  Class 'App\Controller\Admin\NotFoundException' not found in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/HistoryQuestionsController.php on line 39
+[22-Jan-2016 21:15:20 UTC] PHP Fatal error:  Class 'App\Controller\Admin\NotFoundException' not found in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/HistoryQuestionsController.php on line 39
+[22-Jan-2016 21:20:35 UTC] PHP Fatal error:  Class 'App\Controller\Admin\NotFoundException' not found in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/HistoryQuestionsController.php on line 70
+[22-Jan-2016 21:21:20 UTC] PHP Fatal error:  Class 'App\Controller\Admin\App\Controller\NotFoundException' not found in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/HistoryQuestionsController.php on line 70
+[22-Jan-2016 21:22:38 UTC] PHP Parse error:  syntax error, unexpected 'App' (T_STRING), expecting \\ (T_NS_SEPARATOR) in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/HistoryQuestionsController.php on line 70
+[22-Jan-2016 21:26:43 UTC] PHP Fatal error:  Class 'App\Controller\Admin\NotFoundException' not found in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/HistoryQuestionsController.php on line 70
+[22-Jan-2016 21:29:52 UTC] PHP Fatal error:  Class 'App\Controller\Admin\NotFoundException' not found in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/HistoryQuestionsController.php on line 71
+[22-Jan-2016 21:30:17 UTC] PHP Fatal error:  Class 'App\Controller\NotFoundException' not found in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/HistoryQuestionsController.php on line 71
+[22-Jan-2016 21:30:46 UTC] PHP Fatal error:  Class 'App\Controller\Exception\NotFoundException' not found in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/HistoryQuestionsController.php on line 71
+[22-Jan-2016 21:30:56 UTC] PHP Fatal error:  Class 'App\Controller\NotFoundException' not found in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/HistoryQuestionsController.php on line 71
+[22-Jan-2016 21:33:28 UTC] PHP Fatal error:  Class 'App\Controller\Admin\NotFoundException' not found in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/HistoryQuestionsController.php on line 71
+[22-Jan-2016 21:34:05 UTC] PHP Fatal error:  Class 'App\Controller\Exception\MissingActionException' not found in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/HistoryQuestionsController.php on line 71
+[22-Jan-2016 21:35:51 UTC] PHP Fatal error:  Class 'Cake\Network\Exception\MissingActionException' not found in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/HistoryQuestionsController.php on line 71
+[22-Jan-2016 22:18:36 UTC] PHP Fatal error:  Cannot redeclare App\Controller\Admin\HistoryQuestionsController::delete() in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/HistoryQuestionsController.php on line 238
+[26-Jan-2016 22:20:18 UTC] PHP Fatal error:  Function name must be a string in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/Collection/CollectionTrait.php on line 384
+[26-Jan-2016 22:20:18 UTC] PHP Fatal error:  [InvalidArgumentException] Unterminated comment starting line 2
+#0 /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/Error/Debugger.php(404): highlight_string('<?php \n    /**', true)
+#1 /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/Error/Debugger.php(377): Cake\Error\Debugger::_highlight('    /**')
+#2 /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/Template/Element/exception_stack_trace.ctp(25): Cake\Error\Debugger::excerpt('/home/wipedis2/...', 90, 4)
+#3 /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/View/View.php(971): include('/home/wipedis2/...')
+#4 /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/View/View.php(931): Cake\View\View->_evaluate('/home/wipedis2/...', Array)
+#5 /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/View/View.php(1308): Cake\View\View->_render('/home/wipedis2/...', Array)
+#6 /home/wipedis2/public_html/dev/virtual_patient/vendor/c in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/Error/ErrorHandler.php on line 156
+[26-Jan-2016 22:20:30 UTC] PHP Fatal error:  Function name must be a string in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/Collection/CollectionTrait.php on line 384
+[26-Jan-2016 22:20:30 UTC] PHP Fatal error:  [InvalidArgumentException] Unterminated comment starting line 2
+#0 /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/Error/Debugger.php(404): highlight_string('<?php \n    /**', true)
+#1 /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/Error/Debugger.php(377): Cake\Error\Debugger::_highlight('    /**')
+#2 /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/Template/Element/exception_stack_trace.ctp(25): Cake\Error\Debugger::excerpt('/home/wipedis2/...', 90, 4)
+#3 /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/View/View.php(971): include('/home/wipedis2/...')
+#4 /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/View/View.php(931): Cake\View\View->_evaluate('/home/wipedis2/...', Array)
+#5 /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/View/View.php(1308): Cake\View\View->_render('/home/wipedis2/...', Array)
+#6 /home/wipedis2/public_html/dev/virtual_patient/vendor/c in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/Error/ErrorHandler.php on line 156
+[26-Jan-2016 22:27:45 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/wipedis2/public_html/dev/virtual_patient/src/Model/Table/VideosTable.php on line 134
+[27-Jan-2016 00:12:32 UTC] PHP Fatal error:  Allowed memory size of 100663296 bytes exhausted (tried to allocate 89653248 bytes) in /home/wipedis2/public_html/dev/virtual_patient/src/Template/Admin/HistoryQuestions/add_question.ctp on line 4
+[27-Jan-2016 04:02:57 UTC] PHP Fatal error:  Call to undefined method App\Model\Entity\HistoryQuestion::count() in /home/wipedis2/public_html/dev/virtual_patient/src/Template/HistoryQuestions/index.ctp on line 70
+[28-Jan-2016 21:51:55 UTC] PHP Fatal error:  Namespace declaration statement has to be the very first statement in the script in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/CustomPagesController.php on line 2
+[28-Jan-2016 23:58:49 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting identifier (T_STRING) in /home/wipedis2/public_html/dev/virtual_patient/src/Template/Admin/Videos/edit.ctp on line 10
+[29-Jan-2016 00:54:09 UTC] PHP Fatal error:  Call to a member function getVideoList() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/CustomPagesController.php on line 32
+[29-Jan-2016 00:54:34 UTC] PHP Fatal error:  Call to a member function getVideoList() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/CustomPagesController.php on line 32
+[29-Jan-2016 23:20:00 UTC] PHP Parse error:  syntax error, unexpected ''contain'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/VideosController.php on line 23
+[30-Jan-2016 20:20:04 UTC] PHP Fatal error:  Class 'App\Controller\Admin\ConnectionManager' not found in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/OrderLabsController.php on line 34
+[30-Jan-2016 20:20:19 UTC] PHP Fatal error:  Class 'App\Controller\Admin\ConnectionManager' not found in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/OrderLabsController.php on line 34
+[30-Jan-2016 20:22:25 UTC] PHP Fatal error:  Class 'App\Controller\Admin\ConnectionManager' not found in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/OrderLabsController.php on line 34
+[30-Jan-2016 20:25:07 UTC] PHP Fatal error:  Class 'App\Controller\Admin\ConnectionManager' not found in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/OrderLabsController.php on line 34
+[30-Jan-2016 22:34:27 UTC] PHP Parse error:  syntax error, unexpected '' => '' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/OrderLabsController.php on line 21
+[30-Jan-2016 22:34:29 UTC] PHP Parse error:  syntax error, unexpected '' => '' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/OrderLabsController.php on line 21
+[30-Jan-2016 22:34:44 UTC] PHP Parse error:  syntax error, unexpected '' => '' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/OrderLabsController.php on line 21
+[02-Feb-2016 01:03:40 UTC] PHP Fatal error:  Call to undefined method ArrayIterator::all() in /home/wipedis2/public_html/dev/virtual_patient/src/Model/Table/OrderLabsTable.php on line 173
+[02-Feb-2016 02:43:18 UTC] PHP Fatal error:  Call to undefined method Cake\Database\Query::toArray() in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/debug_kit/src/Panel/VariablesPanel.php on line 76
+[02-Feb-2016 02:43:35 UTC] PHP Fatal error:  Call to undefined method Cake\Database\Query::toArray() in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/debug_kit/src/Panel/VariablesPanel.php on line 76
+[02-Feb-2016 19:53:00 UTC] PHP Fatal error:  Call to a member function errors() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/ORM/Table.php on line 1366
+[02-Feb-2016 19:56:13 UTC] PHP Fatal error:  Call to a member function provider() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/Validation/ValidatorAwareTrait.php on line 112
+[02-Feb-2016 19:56:53 UTC] PHP Fatal error:  Call to a member function provider() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/Validation/ValidatorAwareTrait.php on line 112
+[02-Feb-2016 19:59:25 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']' in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/OrderLabsController.php on line 153
+[02-Feb-2016 21:44:22 UTC] PHP Parse error:  syntax error, unexpected ''-1'' (T_CONSTANT_ENCAPSED_STRING) in /home/wipedis2/public_html/dev/virtual_patient/src/Template/Admin/OrderLabs/labs.ctp on line 4
+[02-Feb-2016 21:44:48 UTC] PHP Parse error:  syntax error, unexpected ''-1'' (T_CONSTANT_ENCAPSED_STRING) in /home/wipedis2/public_html/dev/virtual_patient/src/Template/Admin/OrderLabs/labs.ctp on line 4
+[02-Feb-2016 21:46:26 UTC] PHP Parse error:  syntax error, unexpected 'unset' (T_UNSET) in /home/wipedis2/public_html/dev/virtual_patient/src/Template/Admin/OrderLabs/labs.ctp on line 3
+[02-Feb-2016 21:46:47 UTC] PHP Parse error:  syntax error, unexpected 'unset' (T_UNSET) in /home/wipedis2/public_html/dev/virtual_patient/src/Template/Admin/OrderLabs/labs.ctp on line 3
+[02-Feb-2016 21:47:16 UTC] PHP Parse error:  syntax error, unexpected 'unset' (T_UNSET) in /home/wipedis2/public_html/dev/virtual_patient/src/Template/Admin/OrderLabs/labs.ctp on line 4
+[04-Feb-2016 22:26:48 UTC] PHP Fatal error:  Call to a member function read() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/AppController.php on line 233
+[04-Feb-2016 22:27:32 UTC] PHP Fatal error:  Call to a member function read() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/AppController.php on line 233
+[04-Feb-2016 23:32:31 UTC] PHP Fatal error:  Class 'App\Controller\DateTime' not found in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/AppController.php on line 273
+[04-Feb-2016 23:43:51 UTC] PHP Fatal error:  Call to undefined method Cake\Database\Query::toArray() in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/debug_kit/src/Panel/VariablesPanel.php on line 76
+[05-Feb-2016 00:25:30 UTC] PHP Fatal error:  Call to a member function execute() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/AppController.php on line 283
+[05-Feb-2016 20:24:57 UTC] PHP Parse error:  syntax error, unexpected '==' (T_IS_EQUAL), expecting ')' in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/AppController.php on line 299
+[05-Feb-2016 21:52:57 UTC] PHP Fatal error:  Call to a member function find() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/HistoryQuestionsController.php on line 26
+[11-Feb-2016 00:52:38 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/wipedis2/public_html/dev/virtual_patient/src/Template/Admin/AllCases/edit.ctp on line 11
+[11-Feb-2016 19:38:45 UTC] PHP Fatal error:  Call to a member function getGroups() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/ManagementCounselingsController.php on line 22
+[11-Feb-2016 20:03:17 UTC] PHP Fatal error:  Call to a member function getGroups() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/ManagementCounselingsController.php on line 22
+[11-Feb-2016 20:03:23 UTC] PHP Fatal error:  Call to a member function getGroups() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/ManagementCounselingsController.php on line 22
+[11-Feb-2016 20:05:30 UTC] PHP Fatal error:  Call to a member function getGroups() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/ManagementCounselingsController.php on line 22
+[11-Feb-2016 20:05:59 UTC] PHP Fatal error:  Call to a member function getGroups() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/ManagementCounselingsController.php on line 22
+[11-Feb-2016 20:06:13 UTC] PHP Fatal error:  Call to a member function getGroups() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/ManagementCounselingsController.php on line 22
+[11-Feb-2016 22:00:00 UTC] PHP Fatal error:  Call to a member function newEntity() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/ManagementCounselingsController.php on line 26
+[11-Feb-2016 23:11:07 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/wipedis2/public_html/dev/virtual_patient/src/Template/Admin/ManagementCounselings/index.ctp on line 67
+[13-Feb-2016 00:06:29 UTC] PHP Fatal error:  Can't use method return value in write context in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/ManagementReferralsController.php on line 137
+[13-Feb-2016 00:06:54 UTC] PHP Fatal error:  Can't use method return value in write context in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/ManagementReferralsController.php on line 137
+[13-Feb-2016 01:11:41 UTC] PHP Fatal error:  Class 'App\Controller\Admin\DateTime' not found in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/AllCasesController.php on line 70
+[13-Feb-2016 01:14:18 UTC] PHP Fatal error:  Call to undefined method Cake\Database\Connection::last_insert_id() in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/AllCasesController.php on line 73
+[13-Feb-2016 01:19:39 UTC] PHP Fatal error:  Call to undefined method Cake\Database\Connection::lastInsertId() in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/AllCasesController.php on line 73
+[13-Feb-2016 01:21:33 UTC] PHP Fatal error:  Call to undefined method Cake\Database\Connection::getLastInsertId() in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/AllCasesController.php on line 73
+[13-Feb-2016 01:23:01 UTC] PHP Fatal error:  Call to undefined method Cake\Database\Connection::getInsertId() in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/AllCasesController.php on line 73
+[13-Feb-2016 01:26:26 UTC] PHP Fatal error:  Call to a member function errors() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/ORM/Table.php on line 1366
+[13-Feb-2016 01:27:31 UTC] PHP Fatal error:  Call to a member function isNew() on a non-object in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/cakephp/src/ORM/Marshaller.php on line 448
+[13-Feb-2016 01:50:11 UTC] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH), expecting ']' in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/AllCasesController.php on line 87
+[13-Feb-2016 01:54:13 UTC] PHP Fatal error:  Call to undefined method Cake\Database\Query::toArray() in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/debug_kit/src/Panel/VariablesPanel.php on line 76
+[13-Feb-2016 01:56:19 UTC] PHP Fatal error:  Call to undefined method Cake\Database\Query::toArray() in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/debug_kit/src/Panel/VariablesPanel.php on line 76
+[13-Feb-2016 01:58:30 UTC] PHP Fatal error:  Call to undefined method Cake\Database\Query::toArray() in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/debug_kit/src/Panel/VariablesPanel.php on line 76
+[13-Feb-2016 01:58:38 UTC] PHP Fatal error:  Call to undefined method Cake\Database\Query::toArray() in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/debug_kit/src/Panel/VariablesPanel.php on line 76
+[13-Feb-2016 02:00:50 UTC] PHP Fatal error:  Call to undefined method Cake\Database\Query::toArray() in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/debug_kit/src/Panel/VariablesPanel.php on line 76
+[13-Feb-2016 02:01:58 UTC] PHP Fatal error:  Call to undefined method Cake\Database\Query::toArray() in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/debug_kit/src/Panel/VariablesPanel.php on line 76
+[13-Feb-2016 02:11:08 UTC] PHP Fatal error:  Call to undefined method Cake\Database\Query::toArray() in /home/wipedis2/public_html/dev/virtual_patient/vendor/cakephp/debug_kit/src/Panel/VariablesPanel.php on line 76
+[13-Feb-2016 21:11:53 UTC] PHP Fatal error:  Call to undefined method App\Controller\Admin\GeneralSettingsController::find() in /home/wipedis2/public_html/dev/virtual_patient/src/Controller/Admin/GeneralSettingsController.php on line 27

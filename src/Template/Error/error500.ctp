@@ -2,8 +2,6 @@
 use Cake\Core\Configure;
 use Cake\Error\Debugger;
 
-$this->layout = 'error';
-
 if (Configure::read('debug')):
     $this->layout = 'dev_error';
 
@@ -20,11 +18,7 @@ if (Configure::read('debug')):
 <?php endif; ?>
 <?php if (!empty($error->params)) : ?>
         <strong>SQL Query Params: </strong>
-        <?php Debugger::dump($error->params) ?>
-<?php endif; ?>
-<?php if ($error instanceof Error) : ?>
-        <strong>Error in: </strong>
-        <?= sprintf('%s, line %s', str_replace(ROOT, 'ROOT', $error->getFile()), $error->getLine()) ?>
+        <?= Debugger::dump($error->params) ?>
 <?php endif; ?>
 <?php
     echo $this->element('auto_table_warning');

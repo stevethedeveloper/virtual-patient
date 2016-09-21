@@ -10,8 +10,7 @@ use Cake\Validation\Validator;
 /**
  * Pages Model
  *
- * @property \Cake\ORM\Association\BelongsTo $PageTypes
- * @property \Cake\ORM\Association\HasMany $ContentBlocks
+ * @property \Cake\ORM\Association\BelongsTo $AllCases
  */
 class PagesTable extends Table
 {
@@ -27,17 +26,14 @@ class PagesTable extends Table
         parent::initialize($config);
 
         $this->table('pages');
-        $this->displayField('title');
+        $this->displayField('id');
         $this->primaryKey('id');
 
         $this->addBehavior('Timestamp');
 
-        $this->belongsTo('PageTypes', [
-            'foreignKey' => 'page_type_id',
+        $this->belongsTo('AllCases', [
+            'foreignKey' => 'case_id',
             'joinType' => 'INNER'
-        ]);
-        $this->hasMany('ContentBlocks', [
-            'foreignKey' => 'page_id'
         ]);
     }
 
@@ -50,28 +46,8 @@ class PagesTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->integer('id')
+            ->add('id', 'valid', ['rule' => 'numeric'])
             ->allowEmpty('id', 'create');
-
-        $validator
-            ->requirePresence('title', 'create')
-            ->notEmpty('title');
-
-        $validator
-            ->requirePresence('controller', 'create')
-            ->notEmpty('controller');
-
-        $validator
-            ->requirePresence('action', 'create')
-            ->notEmpty('action');
-
-        $validator
-            ->requirePresence('prefix', 'create')
-            ->notEmpty('prefix');
-
-        $validator
-            ->requirePresence('configuration', 'create')
-            ->notEmpty('configuration');
 
         return $validator;
     }
@@ -85,7 +61,7 @@ class PagesTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['page_type_id'], 'PageTypes'));
+        $rules->add($rules->existsIn(['case_id'], 'AllCases'));
         return $rules;
     }
 }

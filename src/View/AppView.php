@@ -14,7 +14,6 @@
 namespace App\View;
 
 use Cake\View\View;
-use BootstrapUI\View\UIViewTrait;
 
 /**
  * Application View
@@ -26,7 +25,6 @@ use BootstrapUI\View\UIViewTrait;
 class AppView extends View
 {
 
-    use UIViewTrait;
     /**
      * Initialization hook method.
      *
@@ -36,10 +34,14 @@ class AppView extends View
      *
      * @return void
      */
+    //public $layout = 'BootstrapUI.default';
+
     public function initialize()
     {
-
-	$this->initializeUI(['layout' => false]);
-
+        parent::initialize();
+        //$this->loadHelper('Html', ['className' => 'BootstrapUI.Html']);
+        $this->loadHelper('Form', ['className' => 'BootstrapUI.Form']);
+        $this->loadHelper('Flash', ['className' => 'BootstrapUI.Flash']);
+        $this->loadHelper('Paginator', ['className' => 'BootstrapUI.Paginator']);
     }
 }

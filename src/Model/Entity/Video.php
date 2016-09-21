@@ -7,14 +7,13 @@ use Cake\ORM\Entity;
  * Video Entity.
  *
  * @property int $id
- * @property int $content_page_id
- * @property \App\Model\Entity\ContentPage $content_page
- * @property string $video_url
- * @property string $title
- * @property string $description
- * @property int $display_order
+ * @property int $all_cases_id
+ * @property string $video_file_name
+ * @property string $video_nice_name
  * @property \Cake\I18n\Time $created
  * @property \Cake\I18n\Time $modified
+ * @property \App\Model\Entity\AllCase $all_case
+ * @property \App\Model\Entity\HistoryQuestion[] $history_questions
  */
 class Video extends Entity
 {

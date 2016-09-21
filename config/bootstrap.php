@@ -33,19 +33,9 @@ require ROOT . DS . 'vendor' . DS . 'autoload.php';
  */
 require CORE_PATH . 'config' . DS . 'bootstrap.php';
 
-// You can remove this if you are confident that your PHP version is sufficient.
-if (version_compare(PHP_VERSION, '5.5.9') < 0) {
-    trigger_error('You PHP version must be equal or higher than 5.5.9 to use CakePHP.', E_USER_ERROR);
-}
-
 // You can remove this if you are confident you have intl installed.
 if (!extension_loaded('intl')) {
     trigger_error('You must enable the intl extension to use CakePHP.', E_USER_ERROR);
-}
-
-// You can remove this if you are confident you have mbstring installed.
-if (!extension_loaded('mbstring')) {
-    trigger_error('You must enable the mbstring extension to use CakePHP.', E_USER_ERROR);
 }
 
 use Cake\Cache\Cache;
@@ -76,7 +66,7 @@ try {
     Configure::config('default', new PhpConfig());
     Configure::load('app', 'default', false);
 } catch (\Exception $e) {
-    exit($e->getMessage() . "\n");
+    die($e->getMessage() . "\n");
 }
 
 // Load an environment local configuration file.
@@ -107,7 +97,7 @@ mb_internal_encoding(Configure::read('App.encoding'));
  * Set the default locale. This controls how dates, number and currency is
  * formatted and sets the default language to use for translations.
  */
-ini_set('intl.default_locale', Configure::read('App.defaultLocale'));
+ini_set('intl.default_locale', 'en_US');
 
 /**
  * Register application error and exception handlers.
@@ -155,7 +145,7 @@ Security::salt(Configure::consume('Security.salt'));
  * If you are migrating from 2.x uncomment this code to
  * use a more compatible Mcrypt based implementation
  */
-//Security::engine(new \Cake\Utility\Crypto\Mcrypt());
+// Security::engine(new \Cake\Utility\Crypto\Mcrypt());
 
 /**
  * Setup detectors for mobile and tablet.
@@ -195,7 +185,7 @@ Plugin::load('Migrations');
 // Only try to load DebugKit in development mode
 // Debug Kit should not be installed on a production system
 if (Configure::read('debug')) {
-    //Plugin::load('DebugKit', ['bootstrap' => true]);
+    Plugin::load('DebugKit', ['bootstrap' => true]);
 }
 
 /**
@@ -208,49 +198,11 @@ DispatcherFactory::add('ControllerFactory');
 /**
  * Enable default locale format parsing.
  * This is needed for matching the auto-localized string output of Time() class when parsing dates.
- *
- * Also enable immutable time objects in the ORM.
  */
-Type::build('time')
-    ->useImmutable()
-    ->useLocaleParser();
-Type::build('date')
-    ->useImmutable()
-    ->useLocaleParser();
-Type::build('datetime')
-    ->useImmutable()
-    ->useLocaleParser();
-
-\Cake\Event\EventManager::instance()->on('Model.initialize', function (\Cake\Event\Event $event) {
-    $event->subject()->addBehavior('Timestamp');
-});
+Type::build('date')->useLocaleParser();
+Type::build('datetime')->useLocaleParser();
 
 \Cake\Core\Plugin::load('BootstrapUI');
 
-function slugify($text)
-{
-  // replace non letter or digits by -
-  $text = preg_replace('~[^\pL\d]+~u', '-', $text);
-
-  // transliterate
-  $text = iconv('utf-8', 'us-ascii//TRANSLIT', $text);
-
-  // remove unwanted characters
-  $text = preg_replace('~[^-\w]+~', '', $text);
-
-  // trim
-  $text = trim($text, '-');
-
-  // remove duplicate -
-  $text = preg_replace('~-+~', '-', $text);
-
-  // lowercase
-  $text = strtolower($text);
-
-  if (empty($text))
-  {
-    return 'n-a';
-  }
-
-  return $text;
-}
+//STEVE CHANGE ME
+define('BACK_TO_WP', 'http://wipediseases.org/');

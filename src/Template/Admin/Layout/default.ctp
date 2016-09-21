@@ -1,371 +1,170 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | Dashboard</title>
-  <!-- Tell the browser to be responsive to screen width -->
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <!-- Bootstrap 3.3.6 -->
-  <?php echo $this->Html->css('/admin/bootstrap/css/bootstrap.min.css');?>
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-  <!-- Theme style -->
-  <?php echo $this->Html->css('/admin/dist/css/AdminLTE.min.css');?>
-  <!-- AdminLTE Skins. Choose a skin from the css/skins
-       folder instead of downloading all of them to reduce the load. -->
-  <?php echo $this->Html->css('/admin/dist/css/skins/_all-skins.min.css');?>
-  <!-- iCheck -->
-  <?php echo $this->Html->css('/admin/plugins/iCheck/flat/blue.css');?>
-  <!-- Morris chart -->
-  <?//php echo $this->Html->css('/admin/plugins/morris/morris.css');?>
-  <!-- jvectormap -->
-  <?php echo $this->Html->css('/admin/plugins/jvectormap/jquery-jvectormap-1.2.2.css');?>
-  <!-- Date Picker -->
-  <?php echo $this->Html->css('/admin/plugins/datepicker/datepicker3.css');?>
-  <!-- Daterange picker -->
-  <?php echo $this->Html->css('/admin/plugins/daterangepicker/daterangepicker-bs3.css');?>
-  <!-- bootstrap wysihtml5 - text editor -->
-  <?php echo $this->Html->css('/admin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css');?>
 
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <!-- jQuery 2.2.0 -->
-  <?php echo $this->Html->script('/admin/plugins/jQuery/jQuery-2.2.0.min.js');?>
-  <!-- jQuery UI 1.11.4 -->
-  <?php echo $this->Html->script('/admin/js/jquery-ui.min.js');?>
+    <title><?= $this->fetch('title') ?></title>
+
+    <!-- Bootstrap Core CSS -->
+    <?php
+    echo $this->Html->css('bootstrap/bootstrap.css');
+    ?>
+
+    <!-- MetisMenu CSS -->
+    <?php
+    echo $this->Html->css('admin/metisMenu.min.css');
+    ?>
+
+    <!-- Timeline CSS -->
+    <?php
+    echo $this->Html->css('admin/timeline.css');
+    ?>
+
+    <!-- Custom CSS -->
+    <?php
+    echo $this->Html->css('admin/sb-admin-2.css');
+    ?>
+
+    <!-- Morris Charts CSS -->
+    <?php
+    echo $this->Html->css('admin/morris.css');
+    ?>
+
+    <!-- Custom Fonts -->
+    <?php
+        echo $this->Html->css('font-awesome.min.css');
+    ?>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery -->
+    <?php
+        echo $this->Html->script('admin/bower_components/jquery/dist/jquery.min.js');
+    ?>
+
+    <!-- jQuery-UI -->
+    <?php
+        echo $this->Html->script('jquery/jquery-ui.min.js');
+    ?>
+
+    <!-- TinyMCE -->
+    <?php
+        echo $this->Html->script('tinymce/tinymce.min.js');
+    ?>
+    <script>
+    tinymce.init({ 
+        selector:'textarea',
+        //theme : "advanced",
+        plugins: [
+            "advlist autolink lists link image charmap print preview anchor",
+            "searchreplace visualblocks code fullscreen",
+            //"insertdatetime media table contextmenu paste jbimages"
+            "insertdatetime media table contextmenu paste validatable"
+        ],
+        //toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image jbimages",
+        toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link",
+        force_br_newlines : false,
+        force_p_newlines : false,
+        forced_root_block : '',
+        relative_urls: false
+    });
+    </script>
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
-<div class="wrapper">
 
-  <header class="main-header">
-    <!-- Logo -->
-    <a href="index2.html" class="logo">
-      <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>A</b>LT</span>
-      <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Admin</b>LTE</span>
-    </a>
-    <!-- Header Navbar: style can be found in header.less -->
-    <nav class="navbar navbar-static-top">
-      <!-- Sidebar toggle button-->
-      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-        <span class="sr-only">Toggle navigation</span>
-      </a>
+<body>
 
-      <div class="navbar-custom-menu">
-        <ul class="nav navbar-nav">
-          <!-- User Account: style can be found in dropdown.less -->
-          <li class="dropdown user user-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <span class="hidden-xs">Logged in as:  <strong><?=$username;?></strong></span>
-            </a>
-            <ul class="dropdown-menu">
-              <!-- User image -->
-              <!-- Menu Footer-->
-              <li class="user-footer">
-                <div class="text-center">
-                  <?= $this->Html->link('Sign out', '/admin/logout', array('class' => 'btn btn-default btn-flat'));?>
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Wipe Diseases Admin</a>
+            </div>
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li<?=($this->request->controller == 'CustomPages' && $this->request->action == 'index') ? ' class="active"' : '' ?>>
+                            <a href="<?= $this->Url->build(['controller' => '/'])?>"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        </li>
+                        <li<?=!($this->request->controller == 'CustomPages' && $this->request->action == 'index') ? ' class="active"' : '' ?>>
+                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Cases<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="<?= $this->Url->build(['controller' => 'all_cases'])?>"<?=!($this->request->controller == 'CustomPages' && $this->request->action == 'index') ? ' class="active"' : '' ?>>Edit Cases</a>
+                                </li>
+                                <li>
+                                    <a href="<?= $this->Url->build(['controller' => 'all_cases', 'action' => 'newCase'])?>">Add New Case</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                    </ul>
                 </div>
-              </li>
-            </ul>
-          </li>
-          <!-- Control Sidebar Toggle Button -->
-          <li>
-            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <!-- Left side column. contains the logo and sidebar -->
-  <aside class="main-sidebar">
-    <!-- sidebar: style can be found in sidebar.less -->
-    <section class="sidebar">
-      <!-- sidebar menu: : style can be found in sidebar.less -->
-      <ul class="sidebar-menu">
-        <li class="header">MAIN NAVIGATION</li>
-        <li>
-          <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
-          </a>
-        </li>
-        <li class="<?= ($this->request->controller == 'Menus') ? 'active ' : '';?> treeview">
-          <a href="#">
-            <i class="fa fa-bars"></i> <span>Menus</span> <i class="fa fa-angle-left pull-right"></i>
-          </a>
-          <ul class="treeview-menu">
-            <li<?= ($this->request->controller == 'Menus' && $this->request->action == 'index') ? ' class="active"' : '';?>><a href="<?= $this->Url->build(["controller" => "Menus", "action" => "index"]);?>"><i class="fa fa-circle-o"></i> All Menus</a></li>
-            <li<?= ($this->request->controller == 'Menus' && $this->request->action == 'add') ? ' class="active"' : '';?>><a href="<?= $this->Url->build(["controller" => "Menus", "action" => "add"]);?>"><i class="fa fa-circle-o"></i> Add New Menu</a></li>
-          </ul>
-        </li>
-        <li class="<?= ($this->request->controller == 'ContentPages') ? 'active ' : '';?> treeview">
-          <a href="#">
-            <i class="fa fa-file-code-o"></i> <span>Pages</span> <i class="fa fa-angle-left pull-right"></i>
-          </a>
-          <ul class="treeview-menu">
-            <li<?= ($this->request->controller == 'ContentPages' && $this->request->action == 'index') ? ' class="active"' : '';?>><a href="<?= $this->Url->build(["controller" => "ContentPages", "action" => "index"]);?>"><i class="fa fa-circle-o"></i> All Pages</a></li>
-            <li<?= ($this->request->controller == 'ContentPages' && $this->request->action == 'add') ? ' class="active"' : '';?>><a href="<?= $this->Url->build(["controller" => "ContentPages", "action" => "add"]);?>"><i class="fa fa-circle-o"></i> Add New Page</a></li>
-          </ul>
-        </li>
-      </ul>
-    </section>
-    <!-- /.sidebar -->
-  </aside>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
 
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-
-
-
-
+        <div id="page-wrapper">
+            <br />
             <?= $this->Flash->render() ?>
-            <?= $this->fetch('content') ?>
+            <section class="container clearfix">
+                <?= $this->fetch('content') ?>
+            </section>
 
+        </div>
+        <!-- /#page-wrapper -->
 
-
-
-  </div>
-  <!-- /.content-wrapper -->
-  <footer class="main-footer">
-    <div class="pull-right hidden-xs">
-      <b>Version</b> 2.3.3
     </div>
-    <strong>Copyright &copy; 2014-2015 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights
-    reserved.
-  </footer>
+    <!-- /#wrapper -->
 
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Create the tabs -->
-    <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
-      <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
-      <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
-    </ul>
-    <!-- Tab panes -->
-    <div class="tab-content">
-      <!-- Home tab content -->
-      <div class="tab-pane" id="control-sidebar-home-tab">
-        <h3 class="control-sidebar-heading">Recent Activity</h3>
-        <ul class="control-sidebar-menu">
-          <li>
-            <a href="javascript:void(0)">
-              <i class="menu-icon fa fa-birthday-cake bg-red"></i>
+    <!-- Bootstrap Core JavaScript -->
+    <?php
+        echo $this->Html->script('admin/bower_components/bootstrap/dist/js/bootstrap.min.js');
+    ?>
 
-              <div class="menu-info">
-                <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
+    <!-- Metis Menu Plugin JavaScript -->
+    <?php
+        echo $this->Html->script('admin/bower_components/metisMenu/dist/metisMenu.min.js');
+    ?>
 
-                <p>Will be 23 on April 24th</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0)">
-              <i class="menu-icon fa fa-user bg-yellow"></i>
+    <!-- Morris Charts JavaScript -->
+    <?php
+        //echo $this->Html->script('admin/bower_components/raphael/raphael-min.js');
+    ?>
 
-              <div class="menu-info">
-                <h4 class="control-sidebar-subheading">Frodo Updated His Profile</h4>
+    <?php
+        //echo $this->Html->script('admin/bower_components/morrisjs/morris.min.js');
+    ?>
 
-                <p>New phone +1(800)555-1234</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0)">
-              <i class="menu-icon fa fa-envelope-o bg-light-blue"></i>
+    <?php
+        //echo $this->Html->script('admin/morris-data.js');
+    ?>
 
-              <div class="menu-info">
-                <h4 class="control-sidebar-subheading">Nora Joined Mailing List</h4>
 
-                <p>nora@example.com</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0)">
-              <i class="menu-icon fa fa-file-code-o bg-green"></i>
+    <!-- Custom Theme JavaScript -->
+    <?php
+        echo $this->Html->script('admin/sb-admin-2.js');
+    ?>
 
-              <div class="menu-info">
-                <h4 class="control-sidebar-subheading">Cron Job 254 Executed</h4>
-
-                <p>Execution time 5 seconds</p>
-              </div>
-            </a>
-          </li>
-        </ul>
-        <!-- /.control-sidebar-menu -->
-
-        <h3 class="control-sidebar-heading">Tasks Progress</h3>
-        <ul class="control-sidebar-menu">
-          <li>
-            <a href="javascript:void(0)">
-              <h4 class="control-sidebar-subheading">
-                Custom Template Design
-                <span class="label label-danger pull-right">70%</span>
-              </h4>
-
-              <div class="progress progress-xxs">
-                <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0)">
-              <h4 class="control-sidebar-subheading">
-                Update Resume
-                <span class="label label-success pull-right">95%</span>
-              </h4>
-
-              <div class="progress progress-xxs">
-                <div class="progress-bar progress-bar-success" style="width: 95%"></div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0)">
-              <h4 class="control-sidebar-subheading">
-                Laravel Integration
-                <span class="label label-warning pull-right">50%</span>
-              </h4>
-
-              <div class="progress progress-xxs">
-                <div class="progress-bar progress-bar-warning" style="width: 50%"></div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0)">
-              <h4 class="control-sidebar-subheading">
-                Back End Framework
-                <span class="label label-primary pull-right">68%</span>
-              </h4>
-
-              <div class="progress progress-xxs">
-                <div class="progress-bar progress-bar-primary" style="width: 68%"></div>
-              </div>
-            </a>
-          </li>
-        </ul>
-        <!-- /.control-sidebar-menu -->
-
-      </div>
-      <!-- /.tab-pane -->
-      <!-- Stats tab content -->
-      <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
-      <!-- /.tab-pane -->
-      <!-- Settings tab content -->
-      <div class="tab-pane" id="control-sidebar-settings-tab">
-        <form method="post">
-          <h3 class="control-sidebar-heading">General Settings</h3>
-
-          <div class="form-group">
-            <label class="control-sidebar-subheading">
-              Report panel usage
-              <input type="checkbox" class="pull-right" checked>
-            </label>
-
-            <p>
-              Some information about this general settings option
-            </p>
-          </div>
-          <!-- /.form-group -->
-
-          <div class="form-group">
-            <label class="control-sidebar-subheading">
-              Allow mail redirect
-              <input type="checkbox" class="pull-right" checked>
-            </label>
-
-            <p>
-              Other sets of options are available
-            </p>
-          </div>
-          <!-- /.form-group -->
-
-          <div class="form-group">
-            <label class="control-sidebar-subheading">
-              Expose author name in posts
-              <input type="checkbox" class="pull-right" checked>
-            </label>
-
-            <p>
-              Allow the user to show his name in blog posts
-            </p>
-          </div>
-          <!-- /.form-group -->
-
-          <h3 class="control-sidebar-heading">Chat Settings</h3>
-
-          <div class="form-group">
-            <label class="control-sidebar-subheading">
-              Show me as online
-              <input type="checkbox" class="pull-right" checked>
-            </label>
-          </div>
-          <!-- /.form-group -->
-
-          <div class="form-group">
-            <label class="control-sidebar-subheading">
-              Turn off notifications
-              <input type="checkbox" class="pull-right">
-            </label>
-          </div>
-          <!-- /.form-group -->
-
-          <div class="form-group">
-            <label class="control-sidebar-subheading">
-              Delete chat history
-              <a href="javascript:void(0)" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
-            </label>
-          </div>
-          <!-- /.form-group -->
-        </form>
-      </div>
-      <!-- /.tab-pane -->
-    </div>
-  </aside>
-  <!-- /.control-sidebar -->
-  <!-- Add the sidebar's background. This div must be placed
-       immediately after the control sidebar -->
-  <div class="control-sidebar-bg"></div>
-</div>
-<!-- ./wrapper -->
-
-<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-<script>
-  $.widget.bridge('uibutton', $.ui.button);
-</script>
-<!-- Bootstrap 3.3.6 -->
-<?php echo $this->Html->script('/admin/bootstrap/js/bootstrap.min.js');?>
-<!-- Morris.js charts -->
-<?//php echo $this->Html->script('/admin/js/raphael-min.js');?>
-<?//php echo $this->Html->script('/admin/plugins/morris/morris.min.js');?>
-<!-- Sparkline -->
-<?php echo $this->Html->script('/admin/plugins/sparkline/jquery.sparkline.min.js');?>
-<!-- jvectormap -->
-<?php echo $this->Html->script('/admin/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js');?>
-<?php echo $this->Html->script('/admin/plugins/jvectormap/jquery-jvectormap-world-mill-en.js');?>
-<!-- jQuery Knob Chart -->
-<?php echo $this->Html->script('/admin/plugins/knob/jquery.knob.js');?>
-<!-- daterangepicker -->
-<?php echo $this->Html->script('/admin/js/moment.min.js');?>
-<?php echo $this->Html->script('/admin/plugins/daterangepicker/daterangepicker.js');?>
-<!-- datepicker -->
-<?php echo $this->Html->script('/admin/plugins/datepicker/bootstrap-datepicker.js');?>
-<!-- Bootstrap WYSIHTML5 -->
-<?php echo $this->Html->script('/admin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js');?>
-<!-- Slimscroll -->
-<?php echo $this->Html->script('/admin/plugins/slimScroll/jquery.slimscroll.min.js');?>
-<!-- FastClick -->
-<?php echo $this->Html->script('/admin/plugins/fastclick/fastclick.js');?>
-<!-- AdminLTE App -->
-<?php echo $this->Html->script('/admin/dist/js/app.min.js');?>
 </body>
+
 </html>

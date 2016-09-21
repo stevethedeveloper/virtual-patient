@@ -17,8 +17,9 @@ class VideosControllerTest extends IntegrationTestCase
      */
     public $fixtures = [
         'app.videos',
-        'app.content_pages',
-        'app.page_types'
+        'app.all_cases',
+        'app.history_questions',
+        'app.questions'
     ];
 
     /**

@@ -1,136 +1,208 @@
 <?php
-/**
- * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- *
- * Licensed under The MIT License
- * For full copyright and license information, please see the LICENSE.txt
- * Redistributions of files must retain the above copyright notice.
- *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- * @link          http://cakephp.org CakePHP(tm) Project
- * @since         0.10.0
- * @license       http://www.opensource.org/licenses/mit-license.php MIT License
- */
 
-$cakeDescription = 'The Wellbeing Campaign';
+use Cake\Core\Configure;
+
+/**
+ * Default `html` block.
+ */
+if (!$this->fetch('html')) {
+    $this->start('html');
+    printf('<html lang="%s" class="no-js">', Configure::read('App.language'));
+    $this->end();
+}
+
+/**
+ * Default `title` block.
+ */
+if (!$this->fetch('title')) {
+    $this->start('title');
+    echo Configure::read('App.title');
+    $this->end();
+}
+
+/**
+ * Default `footer` block.
+ */
+if (!$this->fetch('tb_footer')) {
+    $this->start('tb_footer');
+    printf('&copy;%s %s', date('Y'), Configure::read('App.title'));
+    $this->end();
+}
+
+/**
+ * Default `body` block.
+ */
+$this->prepend('tb_body_attrs', ' class="' . implode(' ', array($this->request->controller, $this->request->action)) . '" ');
+if (!$this->fetch('tb_body_start')) {
+    $this->start('tb_body_start');
+    echo '<body' . $this->fetch('tb_body_attrs') . '>';
+    $this->end();
+}
+/**
+ * Default `flash` block.
+ */
+if (!$this->fetch('tb_flash')) {
+    $this->start('tb_flash');
+    if (isset($this->Flash)) {
+        echo $this->Flash->render();
+    }
+    $this->end();
+}
+if (!$this->fetch('tb_body_end')) {
+    $this->start('tb_body_end');
+    echo '</body>';
+    $this->end();
+}
+
+/**
+ * Prepend `meta` block with `author` and `favicon`.
+ */
+$this->prepend('meta', $this->Html->meta('author', null, array('name' => 'author', 'content' => Configure::read('App.author'))));
+$this->prepend('meta', $this->Html->meta('favicon.ico', '/favicon.ico', array('type' => 'icon')));
+
+/**
+ * Prepend `css` block with TwitterBootstrap and Bootflat stylesheets and append
+ * the `$html5Shim`.
+ */
+$html5Shim =
+<<<HTML
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+HTML;
+$this->prepend('css', $this->Html->css(['bootstrap/bootstrap']));
+$this->append('css', $html5Shim);
+
+$this->prepend('script', $this->Html->script(['bootstrap/bootstrap']));
+
 ?>
 <!DOCTYPE html>
-<html>
-<head>
-    <?= $this->Html->charset() ?>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>
-        <?= $cakeDescription ?>:
-        <?= $this->fetch('title') ?>
-    </title>
-    <?= $this->Html->meta('icon') ?>
 
-    <?//= $this->Html->css('base.css') ?>
-    <?//= $this->Html->css('cake.css') ?>
+<?= $this->fetch('html') ?>
+
+    <head>
+
+        <?= $this->Html->charset() ?>
+
+        <title><?= $this->fetch('title') ?></title>
+
+        <?php
+        echo $this->Html->css('jquery.jscrollpane.css');
+        echo $this->Html->css('jquery.jscrollpane.lozenge.css');
+        echo $this->Html->css('style.css');
+
+        echo $this->Html->script('jquery/jquery.js');
+        echo $this->Html->script('jquery.mousewheel.js');    
+        echo $this->Html->script('jquery.jscrollpane.min.js');    
+        ?>
+
+
+        <?= $this->fetch('meta') ?>
+        <?= $this->fetch('css') ?>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    </head>
 
     <?php
-    echo $this->Html->css('bootstrap.css');
+    echo $this->fetch('tb_body_start');
     ?>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <?php
-    echo $this->Html->script('bootstrap.min.js');
-    ?>
-
-    <?= $this->Html->css('style.css') ?>
-
-    <?= $this->Html->css('/font-awesome/css/font-awesome.min.css') ?>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <?//= $this->fetch('meta') ?>
-    <?//= $this->fetch('css') ?>
-    <?//= $this->fetch('script') ?>
-</head>
-<body>
-<div id="content">
-    <div class="top-header">
-        <?=$this->Html->image('full_logo.png');?>
-
-        <a href="<?php echo $this->Url->build(["controller" => "for-providers-staff"]);?>">
-        <button type="button" class="btn btn-default" aria-label="Left Align">
-          <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
-          For Providers &amp; Staff
-        </button>
-        </a>
-
-    </div>
-    <!-- Navigation -->
-    <nav class="navbar navbar-default topnav" role="navigation">
-        <div class="container topnav">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle pull-right" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!--<a class="navbar-brand topnav" href="#">Start Bootstrap</a>-->
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <?php foreach ($menus as $menu) {?>
-                    <li>
-                        <?php if (!empty($menu->content_page)) {?>
-                            <a href="<?php echo $this->Url->build(["controller" => $menu->content_page->slug]);?>"><?=$menu->title?></a>
-                        <?php } else {?>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?=$menu->title?></span></a>
-                                <ul class="dropdown-menu">
-                                    <?php foreach ($menu->child_menus as $child) {?>
-                                        <li><a href="<?php echo $this->Url->build(["controller" => $child->content_page->slug]);?>"><?=$child['title']?></a></li>
-                                    <?php }?>
-                                </ul>
-                            </li>
-                        <?php }?>
-                    </li>
-                    <?php }?>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!--<a class="navbar-brand" href="#">Virtual Patient: </a>-->
         </div>
-        <!-- /.container -->
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="<?=$course_home?>" class="button"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Return</a></li>
+
+            <li<?=($this->request->controller == 'CustomPages' && $this->request->action == 'intro') ? ' class="active"' : ''?>><a href="<?= $this->Url->build(['controller' => '/'])?>">Intro</a></li>
+
+            <?if (in_array('history', $locked_sections)) {?>
+                <li><a class="locked">History</a></li>
+            <?} else {?>
+                <li<?=($this->request->controller == 'HistoryQuestions' && $this->request->action == 'index') ? ' class="active"' : ''?>><a href="<?= $this->Url->build(['controller' => 'HistoryQuestions'])?>">History</a></li>
+            <?}?>
+
+            <?if (in_array('physical_exam', $locked_sections)) {?>
+                <li><a class="locked">Physical Exam</a></li>
+            <?} else {?>
+                <li<?=($this->request->controller == 'CustomPages' && $this->request->action == 'physicalExam') ? ' class="active"' : ''?>><a href="<?= $this->Url->build(['controller' => 'physical_exam'])?>">Physical Exam</a></li>
+            <?}?>
+
+            <?if (in_array('differential_diagnosis', $locked_sections)) {?>
+                <li><a class="locked">Differential Diagnosis</a></li>
+            <?} else {?>
+                <li<?=($this->request->controller == 'Diagnostics' && $this->request->action == 'differential') ? ' class="active"' : ''?>><a href="<?= $this->Url->build(['controller' => 'Diagnostics', 'action' => 'differential'])?>">Differential Diagnosis</a></li>
+            <?}?>
+
+            <?if (in_array('more_information', $locked_sections)) {?>
+                <li><a class="locked">More Info</a></li>
+            <?} else {?>
+                <li<?=($this->request->controller == 'CustomPages' && $this->request->action == 'moreInformation') ? ' class="active"' : ''?>><a href="<?= $this->Url->build(['controller' => 'more_information'])?>">More Info</a></li>
+            <?}?>
+    
+            <?if (in_array('labs', $locked_sections)) {?>
+                <li><a class="locked">Study</a></li>
+            <?} else {?>
+                <li<?=($this->request->controller == 'OrderLabs' && $this->request->action == 'index') ? ' class="active"' : ''?>><a href="<?= $this->Url->build(['controller' => 'order_labs'])?>">Study</a></li>
+            <?}?>
+
+            <?if (in_array('diagnosis', $locked_sections)) {?>
+                <li><a class="locked">Diagnosis</a></li>
+            <?} else {?>
+                <li<?=($this->request->controller == 'Diagnostics' && $this->request->action == 'diagnosis') ? ' class="active"' : ''?>><a href="<?= $this->Url->build(['controller' => 'Diagnostics', 'action' => 'diagnosis'])?>">Diagnosis</a></li>
+            <?}?>
+
+            <?if (in_array('management_counseling', $locked_sections) && in_array('management_medication', $locked_sections) && in_array('management_referral', $locked_sections)) {?>
+                <li><a class="locked">Management</a></li>
+            <?} else {?>
+                <li<?=($this->request->controller == 'ManagementCounselings' || $this->request->controller == 'ManagementMedications' || $this->request->controller == 'ManagementReferrals') ? ' class="active"' : ''?>><a href="<?= $this->Url->build(['controller' => 'management'])?>">Management</a></li>
+            <?}?>
+
+            <?if ($hide_billing != 1) {?>
+                <?if (in_array('billing', $locked_sections)) {?>
+                    <li><a class="locked">Billing</a></li>
+                <?} else {?>
+                    <li<?=($this->request->controller == 'Billings' && $this->request->action == 'index') ? ' class="active"' : ''?>><a href="<?= $this->Url->build(['controller' => 'billing'])?>">Billing</a></li>
+                <?}?>
+            <?}?>
+
+            <?if (in_array('feedback_labs', $locked_sections) && in_array('feedback_counseling', $locked_sections) && in_array('feedback_medication', $locked_sections) && in_array('feedback_referral', $locked_sections) && in_array('feedback_billing', $locked_sections)) {?>
+                <li><a class="locked">Feedback</a></li>
+            <?} else {?>
+                <li<?=($this->request->controller == 'Feedback') ? ' class="active"' : ''?>><a href="<?= $this->Url->build(['controller' => 'feedback'])?>">Feedback</a></li>
+            <?}?>
+
+            <?if (in_array('summary', $locked_sections)) {?>
+                <li><a class="locked">Summary</a></li>
+            <?} else {?>
+                <li<?=($this->request->controller == 'CustomPages' && $this->request->action == 'summary') ? ' class="active"' : ''?>><a href="<?= $this->Url->build(['controller' => 'summary'])?>">Summary</a></li>
+            <?}?>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
     </nav>
-
-    <div id="title">
-        <h3><?= $contentPage->title ?></h3>
-        <?= $contentPage->subtitle ?>
+    <div class="content">
+        <?php
+        echo $this->fetch('tb_flash');
+        ?>
+        <?php
+        echo $this->fetch('content');
+        ?>
     </div>
-
-    <div id="title-wave">
-    </div>
-
-    <div id="page-content">
-        <?= $this->Flash->render() ?>
-        <?= $this->fetch('content') ?>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="copyright text-muted small">&copy; <?=date("Y")?> &nbsp;&nbsp;&nbsp;&nbsp;<?=$this->Html->link('Privacy Policy', '/privacy-policy');?></p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-</div>
-</body>
+    <?php
+    echo $this->fetch('tb_footer');
+    echo $this->fetch('script');
+    echo $this->fetch('tb_body_end');
+    ?>
 </html>

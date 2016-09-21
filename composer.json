@@ -5,12 +5,13 @@
     "type": "project",
     "license": "MIT",
     "require": {
-        "php": ">=5.5.9",
-        "cakephp/cakephp": "~3.2",
+        "php": ">=5.4.16",
+        "cakephp/cakephp": "~3.1",
         "mobiledetect/mobiledetectlib": "2.*",
         "cakephp/migrations": "~1.0",
         "cakephp/plugin-installer": "*",
-        "friendsofcake/bootstrap-ui": "^0.5.0"
+        "friendsofcake/bootstrap-ui": "~0.3",
+        "cakedc/tiny-mce": "^1.2"
     },
     "require-dev": {
         "psy/psysh": "@stable",

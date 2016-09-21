@@ -1,6 +1,6 @@
 <?php
 if (!isset($channel)):
-    $channel = [];
+    $channel = array();
 endif;
 if (!isset($channel['title'])):
     $channel['title'] = $this->fetch('title');

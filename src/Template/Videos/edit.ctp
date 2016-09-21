@@ -8,8 +8,10 @@
             )
         ?></li>
         <li><?= $this->Html->link(__('List Videos'), ['action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('List Content Pages'), ['controller' => 'ContentPages', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Content Page'), ['controller' => 'ContentPages', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List All Cases'), ['controller' => 'AllCases', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New All Case'), ['controller' => 'AllCases', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List History Questions'), ['controller' => 'HistoryQuestions', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New History Question'), ['controller' => 'HistoryQuestions', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="videos form large-9 medium-8 columns content">
@@ -17,11 +19,9 @@
     <fieldset>
         <legend><?= __('Edit Video') ?></legend>
         <?php
-            echo $this->Form->input('content_page_id', ['options' => $contentPages]);
-            echo $this->Form->input('video_url');
-            echo $this->Form->input('title');
-            echo $this->Form->input('description');
-            echo $this->Form->input('display_order');
+            echo $this->Form->input('all_cases_id');
+            echo $this->Form->input('video_file_name');
+            echo $this->Form->input('video_nice_name');
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

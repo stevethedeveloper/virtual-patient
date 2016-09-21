@@ -19,7 +19,6 @@
  */
 
 use Cake\Core\Plugin;
-use Cake\Routing\RouteBuilder;
 use Cake\Routing\Router;
 
 /**
@@ -43,26 +42,52 @@ use Cake\Routing\Router;
 Router::defaultRouteClass('DashedRoute');
 
 Router::prefix('admin', function ($routes) {
-    // All routes here will be prefixed with `/admin`
-    // And have the prefix => admin route element added.
+    $routes->connect('/', ['controller' => 'CustomPages', 'action' => 'index']);
     $routes->fallbacks('DashedRoute');
-    $routes->connect('/', ['controller' => 'Dashboard', 'action' => 'index']);
-    $routes->connect('/login', ['controller' => 'Users', 'action' => 'login']);
-    $routes->connect('/logout', ['controller' => 'Users', 'action' => 'logout']);
 });
 
-Router::scope('/', function (RouteBuilder $routes) {
+Router::addUrlFilter(function ($params, $request) {
+    if (isset($request->params['case_slug']) && !isset($params['case_slug'])) {
+        $params['case_slug'] = $request->params['case_slug'];
+    }
+    return $params;
+});
+
+Router::scope(
+    '/cases/:case_slug',
+    function ($routes) {
+        $routes->connect('/', ['controller' => 'CustomPages', 'action' => 'intro']);
+        $routes->connect('/physical-exam', ['controller' => 'CustomPages', 'action' => 'physical_exam']);
+        $routes->connect('/more-information', ['controller' => 'CustomPages', 'action' => 'more_information']);
+        $routes->connect('/management', ['controller' => 'ManagementCounselings', 'action' => 'index']);
+        $routes->connect('/management/medication', ['controller' => 'ManagementMedications', 'action' => 'index']);
+        $routes->connect('/management/referral', ['controller' => 'ManagementReferrals', 'action' => 'index']);
+        $routes->connect('/management/next-section', ['controller' => 'ManagementReferrals', 'action' => 'can_advance']);
+        $routes->connect('/billing', ['controller' => 'Billings']);
+        $routes->connect('/billing/next-section', ['controller' => 'Billings', 'action' => 'can_advance']);
+        $routes->connect('/feedback', ['controller' => 'Feedback', 'action' => 'study']);
+        $routes->connect('/feedback/counseling', ['controller' => 'Feedback', 'action' => 'counseling']);
+        $routes->connect('/feedback/medication', ['controller' => 'Feedback', 'action' => 'medication']);
+        $routes->connect('/feedback/referral', ['controller' => 'Feedback', 'action' => 'referral']);
+        $routes->connect('/feedback/billing', ['controller' => 'Feedback', 'action' => 'billing']);
+        $routes->connect('/summary', ['controller' => 'CustomPages', 'action' => 'summary']);
+        $routes->fallbacks('DashedRoute');
+    }
+);
+
+
+Router::scope('/', function ($routes) {
     /**
      * Here, we are connecting '/' (base path) to a controller called 'Pages',
      * its action called 'display', and we pass a param to select the view file
      * to use (in this case, src/Template/Pages/home.ctp)...
      */
-    $routes->connect('/', ['controller' => 'ContentPages', 'action' => 'display', 'home-page']);
+    $routes->connect('/', ['controller' => 'Pages', 'action' => 'display', 'home']);
 
     /**
      * ...and connect the rest of 'Pages' controller's URLs.
      */
-    $routes->connect('/*', ['controller' => 'ContentPages', 'action' => 'display']);
+    $routes->connect('/pages/*', ['controller' => 'Pages', 'action' => 'display']);
 
     /**
      * Connect catchall routes for all controllers.
@@ -88,3 +113,4 @@ Router::scope('/', function (RouteBuilder $routes) {
  * how to customize the loading of plugin routes.
  */
 Plugin::routes();
+

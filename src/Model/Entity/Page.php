@@ -7,16 +7,14 @@ use Cake\ORM\Entity;
  * Page Entity.
  *
  * @property int $id
- * @property int $page_type_id
- * @property \App\Model\Entity\PageType $page_type
- * @property string $title
- * @property string $controller
- * @property string $action
- * @property string $prefix
- * @property string $configuration
+ * @property int $case_id
+ * @property \App\Model\Entity\AllCase $all_case
+ * @property string $pages_title
+ * @property string $pages_desc
+ * @property string $pages_text
+ * @property int $pages_order
  * @property \Cake\I18n\Time $created
  * @property \Cake\I18n\Time $modified
- * @property \App\Model\Entity\ContentBlock[] $content_blocks
  */
 class Page extends Entity
 {

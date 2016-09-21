@@ -12,21 +12,13 @@ class PagesTableTest extends TestCase
 {
 
     /**
-     * Test subject
-     *
-     * @var \App\Model\Table\PagesTable
-     */
-    public $Pages;
-
-    /**
      * Fixtures
      *
      * @var array
      */
     public $fixtures = [
         'app.pages',
-        'app.page_types',
-        'app.content_blocks'
+        'app.all_cases'
     ];
 
     /**

@@ -2,8 +2,10 @@
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('New Video'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Content Pages'), ['controller' => 'ContentPages', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Content Page'), ['controller' => 'ContentPages', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List All Cases'), ['controller' => 'AllCases', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New All Case'), ['controller' => 'AllCases', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List History Questions'), ['controller' => 'HistoryQuestions', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New History Question'), ['controller' => 'HistoryQuestions', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="videos index large-9 medium-8 columns content">
@@ -12,10 +14,9 @@
         <thead>
             <tr>
                 <th><?= $this->Paginator->sort('id') ?></th>
-                <th><?= $this->Paginator->sort('content_page_id') ?></th>
-                <th><?= $this->Paginator->sort('video_url') ?></th>
-                <th><?= $this->Paginator->sort('title') ?></th>
-                <th><?= $this->Paginator->sort('display_order') ?></th>
+                <th><?= $this->Paginator->sort('all_cases_id') ?></th>
+                <th><?= $this->Paginator->sort('video_file_name') ?></th>
+                <th><?= $this->Paginator->sort('video_nice_name') ?></th>
                 <th><?= $this->Paginator->sort('created') ?></th>
                 <th><?= $this->Paginator->sort('modified') ?></th>
                 <th class="actions"><?= __('Actions') ?></th>
@@ -25,10 +26,9 @@
             <?php foreach ($videos as $video): ?>
             <tr>
                 <td><?= $this->Number->format($video->id) ?></td>
-                <td><?= $video->has('content_page') ? $this->Html->link($video->content_page->title, ['controller' => 'ContentPages', 'action' => 'view', $video->content_page->id]) : '' ?></td>
-                <td><?= h($video->video_url) ?></td>
-                <td><?= h($video->title) ?></td>
-                <td><?= $this->Number->format($video->display_order) ?></td>
+                <td><?= $this->Number->format($video->all_cases_id) ?></td>
+                <td><?= h($video->video_file_name) ?></td>
+                <td><?= h($video->video_nice_name) ?></td>
                 <td><?= h($video->created) ?></td>
                 <td><?= h($video->modified) ?></td>
                 <td class="actions">

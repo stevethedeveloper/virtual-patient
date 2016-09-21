@@ -14,16 +14,14 @@ class VideosController extends AppController
     /**
      * Index method
      *
-     * @return \Cake\Network\Response|null
+     * @return void
      */
     public function index()
     {
         $this->paginate = [
-            'contain' => ['ContentPages']
+            'contain' => ['AllCases']
         ];
-        $videos = $this->paginate($this->Videos);
-
-        $this->set(compact('videos'));
+        $this->set('videos', $this->paginate($this->Videos));
         $this->set('_serialize', ['videos']);
     }
 
@@ -31,15 +29,14 @@ class VideosController extends AppController
      * View method
      *
      * @param string|null $id Video id.
-     * @return \Cake\Network\Response|null
-     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
+     * @return void
+     * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
     public function view($id = null)
     {
         $video = $this->Videos->get($id, [
-            'contain' => ['ContentPages']
+            'contain' => ['AllCases', 'HistoryQuestions']
         ]);
-
         $this->set('video', $video);
         $this->set('_serialize', ['video']);
     }
@@ -47,7 +44,7 @@ class VideosController extends AppController
     /**
      * Add method
      *
-     * @return \Cake\Network\Response|void Redirects on successful add, renders view otherwise.
+     * @return void Redirects on successful add, renders view otherwise.
      */
     public function add()
     {
@@ -61,8 +58,8 @@ class VideosController extends AppController
                 $this->Flash->error(__('The video could not be saved. Please, try again.'));
             }
         }
-        $contentPages = $this->Videos->ContentPages->find('list', ['limit' => 200]);
-        $this->set(compact('video', 'contentPages'));
+        $allCases = $this->Videos->AllCases->find('list', ['limit' => 200]);
+        $this->set(compact('video', 'allCases'));
         $this->set('_serialize', ['video']);
     }
 
@@ -70,7 +67,7 @@ class VideosController extends AppController
      * Edit method
      *
      * @param string|null $id Video id.
-     * @return \Cake\Network\Response|void Redirects on successful edit, renders view otherwise.
+     * @return void Redirects on successful edit, renders view otherwise.
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
     public function edit($id = null)
@@ -87,8 +84,8 @@ class VideosController extends AppController
                 $this->Flash->error(__('The video could not be saved. Please, try again.'));
             }
         }
-        $contentPages = $this->Videos->ContentPages->find('list', ['limit' => 200]);
-        $this->set(compact('video', 'contentPages'));
+        $allCases = $this->Videos->AllCases->find('list', ['limit' => 200]);
+        $this->set(compact('video', 'allCases'));
         $this->set('_serialize', ['video']);
     }
 
@@ -97,7 +94,7 @@ class VideosController extends AppController
      *
      * @param string|null $id Video id.
      * @return \Cake\Network\Response|null Redirects to index.
-     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
+     * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
     public function delete($id = null)
     {

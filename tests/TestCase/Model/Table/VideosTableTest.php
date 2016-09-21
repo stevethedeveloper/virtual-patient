@@ -12,21 +12,15 @@ class VideosTableTest extends TestCase
 {
 
     /**
-     * Test subject
-     *
-     * @var \App\Model\Table\VideosTable
-     */
-    public $Videos;
-
-    /**
      * Fixtures
      *
      * @var array
      */
     public $fixtures = [
         'app.videos',
-        'app.content_pages',
-        'app.page_types'
+        'app.all_cases',
+        'app.history_questions',
+        'app.questions'
     ];
 
     /**
