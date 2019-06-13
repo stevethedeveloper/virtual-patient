@@ -1,5 +1,5 @@
 <div class="allCases index col-md-10 columns content">
-    <h3><?= __('All Cases') ?></h3>
+    <h3><?= __('Cases') ?></h3>
     <div class="table-responsive">
         <table class="table table-striped">
             <thead>
